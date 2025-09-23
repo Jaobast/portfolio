@@ -1,0 +1,36 @@
+footer{
+    width: 100vw;
+    display: flex; flex-direction: column;
+
+    padding-top: 150px;
+    margin-top: 10svh;
+    margin-left: -20px;
+}
+
+#footer-portfolio{background-color: var(--portfolio-color);}
+#footer-mymixx{background-color: var(--mymixx-color);}
+#footer-gleichklang{background-color: var(--gleichklang-color);}
+#footer-essencial{background-color: var(--essencial-color);}
+#footer-flame{background-color: var(--flame-color);}
+
+footer img{
+    width: 100%;
+    opacity: 0.1;
+}
+
+footer .info{
+    display: flex;
+    gap: 80px;
+    margin-left: 60px;
+}
+
+footer .info div{
+    display: flex; flex-direction: column;
+}
+
+footer a{
+    color: white;
+    font-size: 20px;
+}
+
+#footer-mymixx a{color: black;}

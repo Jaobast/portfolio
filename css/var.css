@@ -1,0 +1,16 @@
+@font-face { font-family: 'Afacad'; src: url(../assets/font/Afacad-VariableFont_wght.ttf);}
+
+:root{
+
+    --blue: #008DFF;
+    --green: #37C25C;
+    --orange: #F14600;
+
+    --portfolio-color: #313131;
+    --mymixx-color: #9ABF11;
+    --gleichklang-color: #253B23;
+    --essencial-color: #433023;
+    --flame-color: #900D0D;
+
+    --border: 32px;
+}

@@ -1,0 +1,65 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit; display: flex;}
+
+h1, h2, h3{font-weight: 300; color: black;}
+body{
+    font-family: 'Afacad';
+    font-weight: 300;
+    background-color: white;
+    color: black;
+    padding: 0 20px;
+}
+
+section{overflow-x: hidden;}
+
+img, a{background-size: cover; background-position: center; background-repeat: no-repeat; object-fit: cover;}
+
+button{border: none; display: flex;}
+
+.hidden{ display:none;}
+
+
+/* NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV*/
+
+nav{
+    position: fixed;
+    z-index: 1;
+    top: 0; left: 0;
+    width: 100vw;
+    padding: 40px 40px 10px;
+    border-radius: 0 0 30px 30px ;
+
+    display: flex;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+
+nav li{
+    color: white;
+}
+
+.nav-logo{
+    width: 100px;
+    filter: invert(1) grayscale(1) brightness(1);
+}
+
+/* TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG  TAG*/
+
+.tag-container{
+    display: flex;
+    gap: 20px;
+}
+
+.tag{
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: fit-content;
+}
