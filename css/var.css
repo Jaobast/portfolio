@@ -13,4 +13,11 @@
     --flame-color: #900D0D;
 
     --border: 32px;
+
+    --padding-big: 20px;
+    --padding-small: 10px;
+
+    --text-font-big: 22px;
+    --text-font-small: 16px;
+
 }

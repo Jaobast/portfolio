@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+
+    header .first-info{
+        padding-left: var(--padding-small); padding-right: var(--padding-small);
+        flex-direction: column-reverse;
+        justify-content: space-between; align-items: end;
+    }
+
+    header .first-info .left h2{ font-size: var(--text-font-small);}
+
+    header .first-info .left{
+        width: 100%;
+        align-items: start;
+    }
+
+    header .first-info .right{
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    header .first-info .right .tag-container{ display: flex; gap: 10px;}
+
+    /* DESCRIPTION   DESCRIPTION   DESCRIPTION   DESCRIPTION   DESCRIPTION   DESCRIPTION   DESCRIPTION*/
+
+
+    #description{
+        padding-left: var(--padding-small); padding-right: var(--padding-small);
+    }
+
+    #description p, #presentation article p{
+        font-size: var(--text-font-small);
+        width: 100%;
+    }
+
+    #presentation article{
+        padding: 80px var(--padding-small) 50px;
+        display: flex; flex-direction: column;
+    }
+
+    #presentation article h3{ font-size: var(--text-font-small);}
+    #presentation article h4{ font-size: 25px;}
+    #presentation .article-design{ align-items: start;}
+    #presentation .article-design p{ text-align: start;}
+}
