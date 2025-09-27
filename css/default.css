@@ -1,7 +1,8 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 a{text-decoration: none; color: inherit; display: flex;}
 
-h1, h2, h3{font-weight: 300; color: black;}
+h1, h2, h3, h4{font-weight: 300; color: black;}
+p{font-size: var(--text-font-big); color: var(--grey);}
 body{
     font-family: 'Afacad';
     font-weight: 300;
@@ -59,7 +60,11 @@ nav li{
 
 .tag{
     padding: 5px 15px;
-    border: 1px solid black;
+    border: 1px solid black; color: black;
     border-radius: 50px;
     width: fit-content;
 }
+
+.text-orange{font-size: 20px; line-height: 0; color: var(--orange);}
+.text-large{font-size: 40px;}
+.bold{font-weight: 700;}

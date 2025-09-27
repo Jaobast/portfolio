@@ -1,11 +1,3 @@
-header{
-    padding-top: 10svh;
-    display: flex; flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    width: 100%;
-}
-
 header .logo{height: 8svh;}
 
 
@@ -17,7 +9,8 @@ header video{
 }
 
 header .desktop-height{
-    height: calc(100svh - 10svh - 20px);
+    margin-top: 10svh;
+    height: calc(100svh - 10svh - var(--padding-big));
     overflow: hidden;
 
     display: flex; flex-direction: column;
@@ -26,7 +19,7 @@ header .desktop-height{
 }
 
 header .first-info{
-    padding: 0 20px;
+    padding: 0 var(--padding-big);
     width: 100%;
     display: flex; flex-direction: row;
     justify-content: space-between; align-items: end;
@@ -35,9 +28,6 @@ header .first-info{
 header .first-info .left{
     display: flex; flex-direction: column;
 }
-
-header .first-info .left h2{ font-size: 18px; line-height: 0; color: var(--orange);}
-header .first-info .left h1{ font-size: 40px; font-weight: 700;}
 
 header .first-info .right{
     display: flex; flex-direction: column;
@@ -50,20 +40,18 @@ header .first-info .right{
 
 #description{
     width: 100%;
-    padding: 0 20px 30svh;
+    padding: 0 var(--padding-big) 200px;
     display: flex;  flex-direction: column;
     gap: 50px;
     justify-content: space-between;
 }
 
 #description .tools{
-    display: flex; gap: 15px;
+    display: flex; gap: 10px;
 }
 
-#description .tools img{ height: 40px;}
-#description p{
+#description .description-text{
     margin-top: 30px;
-    font-size: 22px;
     width: 550px;
 }
 
@@ -74,26 +62,29 @@ header .first-info .right{
     gap: 15px;
 }
 
-#presentation img{border-radius: 16px; width: 100%;height: 100%;}
+#presentation img{border-radius: 20px; width: 100%; height: 100%; object-fit: cover;}
 
-#presentation .one{ width: 100%; border-radius: 24px;}
-#presentation .duo, #presentation .little, #presentation .big{ display: grid; gap: 15px;}
+#presentation .one{ width: 100%; flex: 1.5; min-height: 0;}
+#presentation .duo, #presentation .little, #presentation .big{ display: grid; gap: 15px; flex: 1; min-height: 0;}
 
 #presentation .duo{ grid-template-columns: 1fr 1fr;}
 #presentation .little { grid-template-columns: 1fr 2fr;}
 #presentation .big { grid-template-columns: 2fr 1fr;}
 
-
-#presentation article{
-    padding: 200px 20px 100px;
-    display: flex; flex-direction: column;
+#presentation .bento{
+    height: calc(100svh - (var(--padding-big) * 2));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-#presentation article h3{ font-size: 18px; line-height: 0; color: var(--orange);}
-#presentation article h4{ font-size: 40px; font-weight: 300;}
+#presentation article{
+    padding: 150px var(--padding-big) 50px;
+    display: flex; flex-direction: column;
+}
 #presentation article p{
     margin-top: 30px;
-    font-size: 22px;
     width: 550px;
 }
 
@@ -153,3 +144,60 @@ header .first-info .right{
 #next .essencial{background-image: url(../assets/project/essencial/essencial-bild.jpg);}
 #next .mymixx{background-image: url(../assets/project/mymixx/mymixx-bild.jpg);}
 #next .gleichklang{background-image: url(../assets/project/gleichklang/gleichklang-bild.jpg);}
+
+
+/* TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL   TOOL*/
+.svg-icon {
+  height: 40px; width: fit-content;
+  fill: currentColor;
+}
+
+.tool-container{
+    width: fit-content; height: fit-content;
+    position: relative;
+}
+.tool-name{
+    position: absolute;
+    bottom: 50px; left: 50%;
+    font-size: 15px;
+    transform: translateX(-50%);
+}
+
+.color-ae, .color-ai, .color-id, .color-ps,
+.color-css, .color-html, .color-js,
+.color-py, .color-django, .color-react,
+.color-sql, .color-figma{color: var(--grey);}
+
+.fill-blanko{color: white}
+
+@media (min-width: 700px) {
+    div[data-svg="icon-ae"]:hover {color: #00005B;}
+    div[data-svg="icon-ae"]:hover .fill-blanko {color: #9999FF;}
+    
+    div[data-svg="icon-ai"]:hover {color: #300;}
+    div[data-svg="icon-ai"]:hover .fill-blanko {color: #ff9a00;}
+    
+    div[data-svg="icon-id"]:hover {color: #49021F;}
+    div[data-svg="icon-id"]:hover .fill-blanko {color: #FF3366;}
+    
+    div[data-svg="icon-ps"]:hover {color: #001E36;}
+    div[data-svg="icon-ps"]:hover .fill-blanko {color: #31A8FF;}
+    
+    div[data-svg="icon-css"]:hover {color: #2965f1;}
+    div[data-svg="icon-html"]:hover {color: #E44D26;}
+    div[data-svg="icon-js"]:hover {color: #f8d069;}
+    
+    div[data-svg="icon-py"]:hover .fill-01 {color: #809dfe;}
+    div[data-svg="icon-py"]:hover .fill-02 {color: #f8d069;}
+    
+    div[data-svg="icon-django"]:hover {color: #3ca57d;}
+    div[data-svg="icon-react"]:hover {color: #61DBFB;}
+    div[data-svg="icon-sql"]:hover {color: rgb(192, 42, 42);}
+    
+    div[data-svg="icon-figma"]:hover .fill-01 {color: #0acf83;}
+    div[data-svg="icon-figma"]:hover .fill-02 {color: #a259ff;}
+    div[data-svg="icon-figma"]:hover .fill-03 {color: #f24e1e;}
+    div[data-svg="icon-figma"]:hover .fill-04 {color: #ff7262;}
+    div[data-svg="icon-figma"]:hover .fill-05 {color: #1abcfe;}
+
+}

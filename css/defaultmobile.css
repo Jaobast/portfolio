@@ -1,6 +1,8 @@
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     body{ padding-left: var(--padding-small); padding-right: var(--padding-small);}
+
+    p{font-size: var(--text-font-small);}
 
     nav{
     padding-left: calc(var(--padding-small) * 2) ; padding-right: calc(var(--padding-small) * 2);

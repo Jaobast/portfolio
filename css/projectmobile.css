@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     header .first-info{
         padding-left: var(--padding-small); padding-right: var(--padding-small);
@@ -27,10 +27,7 @@
         padding-left: var(--padding-small); padding-right: var(--padding-small);
     }
 
-    #description p, #presentation article p{
-        font-size: var(--text-font-small);
-        width: 100%;
-    }
+    #description .description-text, #presentation article p{ width: 100%;}
 
     #presentation article{
         padding: 80px var(--padding-small) 50px;

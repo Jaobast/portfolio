@@ -5,6 +5,7 @@
     --blue: #008DFF;
     --green: #37C25C;
     --orange: #F14600;
+    --grey: #A0A0A0;
 
     --portfolio-color: #313131;
     --mymixx-color: #9ABF11;
@@ -12,12 +13,11 @@
     --essencial-color: #433023;
     --flame-color: #900D0D;
 
-    --border: 32px;
+    --border: 48px;
 
     --padding-big: 20px;
     --padding-small: 10px;
 
     --text-font-big: 22px;
     --text-font-small: 16px;
-
 }

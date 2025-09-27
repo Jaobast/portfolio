@@ -35,8 +35,8 @@
             <div class="first-info">
 
                 <div class="left">
-                    <h2>Briefing</h2>
-                    <h1>Essencial</h1>
+                    <h2 class="text-orange">Briefing</h2>
+                    <h1 class="text-large bold">Essencial</h1>
                 </div>
 
                 <div class="right">
@@ -51,19 +51,47 @@
         </section>
 
         <section id="description">
-            <p>
+            <p class="description-text">
                 Essencial ist ein Massage-Salon, der Ruhe und Wohlbefinden in den Mittelpunkt stellt. Die visuelle Identität und die Website wurden von mir entwickelt.
                 <br><br>
                 Auf der Website werden die Professionalität und Philosophie der Therapeutin hervorgehoben sowie die verschiedenen Angebote übersichtlich präsentiert.
             </p>
             <div class="tools">
-                <img src="../assets/svg/tools/code-html.svg" alt="html">
-                <img src="../assets/svg/tools/code-css.svg" alt="css">
-                <img src="../assets/svg/tools/code-js.svg" alt="java-script">
-                <img src="../assets/svg/tools/figma.svg" alt="figma">
-                <img src="../assets/svg/tools/adobe-ai.svg" alt="illustrator">
-                <img src="../assets/svg/tools/adobe-ps.svg" alt="photoshop">
-                <img src="../assets/svg/tools/adobe-ae.svg" alt="after effects">
+                <div class="tool-container">
+                    <div data-svg="icon-html" class="color-html"></div>
+                    <p class="tool-name hidden">HTML</p>
+                </div>
+
+                <div class="tool-container">
+                    <div data-svg="icon-css" class="color-css"></div>
+                    <p class="tool-name hidden">CSS</p>
+                </div>
+
+                <div class="tool-container">
+                    <div data-svg="icon-js" class="color-js"></div>
+                    <p class="tool-name hidden">JavaScript</p>
+                </div>
+
+                <div class="tool-container">
+                    <div data-svg="icon-figma" class="color-figma"></div>
+                    <p class="tool-name hidden">Figma</p>
+                </div>
+
+                <div class="tool-container">
+                    <div data-svg="icon-ai" class="color-ai"></div>
+                    <p class="tool-name hidden">Illustrator</p>
+                </div>
+
+                <div class="tool-container">
+                    <div data-svg="icon-ps" class="color-ps"></div>
+                    <p class="tool-name hidden">Photoshop</p>
+                </div>
+
+                <div class="tool-container">
+                    <div data-svg="icon-ae" class="color-ae"></div>
+                    <p class="tool-name hidden">AfterEffects</p>
+                </div>
+
             </div>
             
         </section>
@@ -73,16 +101,19 @@
 
         <section id="presentation">
 
-            <img class="one" src="../assets/project/essencial/looknfeel/essencial-looknfeel-01.jpg" alt="">
+            <section class="bento">
+                <img class="one" src="../assets/project/essencial/looknfeel/essencial-looknfeel-01.jpg" alt="">
+    
+                <div class="little">
+                    <img src="../assets/project/essencial/looknfeel/essencial-looknfeel-02.jpg" alt="">
+                    <img src="../assets/project/essencial/looknfeel/essencial-looknfeel-03.jpg" alt="">
+                </div>
 
-            <div class="little">
-                <img src="../assets/project/essencial/looknfeel/essencial-looknfeel-02.jpg" alt="">
-                <img src="../assets/project/essencial/looknfeel/essencial-looknfeel-03.jpg" alt="">
-            </div>
+            </section>
 
             <article class="article-design">
-                <h3>Design</h3>
-                <h4>Ruhig. Stark. Harmonisch</h4>
+                <h3 class="text-orange">Design</h3>
+                <h4 class="text-large">Ruhig. Stark. Harmonisch</h4>
                 <p>
                     Für das Design habe ich eine Farbwelt entwickelt, die Ruhe und Stärke ausstrahlt.
                     <br><br>
@@ -90,20 +121,21 @@
                 </p>
             </article>
 
-            
-            <div class="duo">
-                <img src="../assets/project/essencial/design/essencial-design-01.jpg" alt="">
-                <img src="../assets/project/essencial/design/essencial-design-02.jpg" alt="">
-            </div>
-
-            <div class="big">
-                <img src="../assets/project/essencial/design/essencial-design-03.jpg" alt="">
-                <img src="../assets/project/essencial/design/essencial-design-04.jpg" alt="">
-            </div>
+            <section class="bento">
+                <div class="duo">
+                    <img src="../assets/project/essencial/design/essencial-design-01.jpg" alt="">
+                    <img src="../assets/project/essencial/design/essencial-design-02.jpg" alt="">
+                </div>
+    
+                <div class="big">
+                    <img src="../assets/project/essencial/design/essencial-design-03.jpg" alt="">
+                    <img src="../assets/project/essencial/design/essencial-design-04.jpg" alt="">
+                </div>
+            </section>
 
             <article>
-                <h3>Code</h3>
-                <h4>Code Architektur</h4>
+                <h3 class="text-orange">Code</h3>
+                <h4 class="text-large">Code Architektur</h4>
                 <p>
                     Der Schwerpunkt lag darauf, die Produktdaten klar zu strukturieren und die UI-Elemente dynamisch zu generieren. <br><br>
 
@@ -144,6 +176,7 @@
         <img src="../assets/svg/logo_joao-white.svg" alt="">
     </footer>
 
+    <script src="../script/tools.js"></script>
     <script src="../script/project.js"></script>
     
 </body>
