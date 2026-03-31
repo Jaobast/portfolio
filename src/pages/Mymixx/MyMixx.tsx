@@ -50,7 +50,7 @@ function MyMixx() {
           textSubtitel='Funktionalität'
         />
 
-        <div className="img-duo">
+        <div className="img-mobile">
           <img src="/portfolio/project/MyMixx/bilder/10.png" alt="bild" />
           <img src="/portfolio/project/MyMixx/bilder/11.png" alt="bild" />
         </div>
@@ -58,9 +58,22 @@ function MyMixx() {
         <ProjectText
           textTheme='Button “Hinzufügen”, “Entfernen”'
           textParagraph={<>
-          Für das Design habe ich eine bunte und vielfältige Bildsprache entwickelt, die die zahlreichen Mix-Möglichkeiten widerspiegelt.
+          Jedes Produktcard verwaltet seinen Zustand über useState, das einen booleschen Wert isAdded speichert. Abhängig davon wechselt das Card zwischen zwei visuellen Zuständen: weißer Hintergrund mit „Hinzufügen"-Button oder farbiger Hintergrund mit „Entfernen"-Button. Das Styling wird dabei nicht per direktem DOM-Zugriff geändert, sondern durch dynamisches Setzen von CSS-Klassen basierend auf dem State.
           <br /><br />
-          Die lebendige Farbwelt betont die Pluralität der Zutaten und vermittelt visuell dieselbe Vielfalt und Freiheit, die auch die Marke selbst verkörpert.
+          Ein Klick auf den Button triggert eine Funktion, die isAdded togglet und gleichzeitig das Produkt im globalen My Mixx-State hinzufügt oder entfernt. Dieser globale State verwaltet über useContext oder ein State-Management wie Redux stellt sicher, dass die Produktauswahl komponentenübergreifend konsistent bleibt.
+          </>}
+        />
+
+        <div className="img-mobile">
+          <img src="/portfolio/project/MyMixx/bilder/12.png" alt="bild" />
+        </div>
+
+        <ProjectText
+          textTheme='Button “Hinzufügen”, “Entfernen”'
+          textParagraph={<>
+          Jedes Produktcard verwaltet seinen Zustand über useState, das einen booleschen Wert isAdded speichert. Abhängig davon wechselt das Card zwischen zwei visuellen Zuständen: weißer Hintergrund mit „Hinzufügen"-Button oder farbiger Hintergrund mit „Entfernen"-Button. Das Styling wird dabei nicht per direktem DOM-Zugriff geändert, sondern durch dynamisches Setzen von CSS-Klassen basierend auf dem State.
+          <br /><br />
+          Ein Klick auf den Button triggert eine Funktion, die isAdded togglet und gleichzeitig das Produkt im globalen My Mixx-State hinzufügt oder entfernt. Dieser globale State verwaltet über useContext oder ein State-Management wie Redux stellt sicher, dass die Produktauswahl komponentenübergreifend konsistent bleibt.
           </>}
         />
     </div>
