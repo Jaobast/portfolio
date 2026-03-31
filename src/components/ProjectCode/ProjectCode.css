@@ -1,0 +1,31 @@
+.ProjectCode{
+    padding: 0 var(--padding);
+
+    & .text-block{
+        display: flex; flex-direction: column;
+        gap: 12px;
+    }
+
+    & p{
+        font-family: monospace;
+        font-size: calc(var(--txt-text) / 1.4) ;
+    }
+}
+
+.line{
+    display: flex;
+}
+
+.line1 { gap: 16px; }
+.line2 { gap: 32px; }
+.line3 { gap: 48px; }
+
+.code-text{
+    margin-left: 16px;
+}
+
+/* cores */
+.code-red    { color: var(--code-red); }
+.code-blue   { color: var(--code-blue);}
+.code-purple { color: var(--code-purple); }
+.code-rosa { color: var(--code-rosa); }

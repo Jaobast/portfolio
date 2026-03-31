@@ -2,6 +2,7 @@ import './MyMixx.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import ProjectText from '../../components/ProjectText/ProjectText'
+import ProjectCode from '../../components/ProjectCode/ProjectCode'
 
 function MyMixx() {
 
@@ -69,12 +70,64 @@ function MyMixx() {
         </div>
 
         <ProjectText
-          textTheme='Button “Hinzufügen”, “Entfernen”'
+          textTheme='Einkaufswagen „My Mixx"'
           textParagraph={<>
-          Jedes Produktcard verwaltet seinen Zustand über useState, das einen booleschen Wert isAdded speichert. Abhängig davon wechselt das Card zwischen zwei visuellen Zuständen: weißer Hintergrund mit „Hinzufügen"-Button oder farbiger Hintergrund mit „Entfernen"-Button. Das Styling wird dabei nicht per direktem DOM-Zugriff geändert, sondern durch dynamisches Setzen von CSS-Klassen basierend auf dem State.
+          Der My-Mixx-Bildschirm zeigt in Echtzeit alle vom Nutzer hinzugefügten Produkte, geordnet nach Kategorie: Basis, Früchte, Süßungsmittel und Nüsse... und der Gesamtpreis<br />
+          Jedes Produkt wird mit Name und Einzelpreis angezeigt und kann direkt über den X-Button entfernt werden.
           <br /><br />
-          Ein Klick auf den Button triggert eine Funktion, die isAdded togglet und gleichzeitig das Produkt im globalen My Mixx-State hinzufügt oder entfernt. Dieser globale State verwaltet über useContext oder ein State-Management wie Redux stellt sicher, dass die Produktauswahl komponentenübergreifend konsistent bleibt.
+          Ein Klick auf den X-Button setzt den booleschen useState isAdded des entsprechenden Produkts auf false zurück. Dadurch verschwindet das Produkt aus der My-Mixx-Liste und der Button im Produktcard wechselt wieder von „Entfernen" zurück zu „Hinzufügen". Der Gesamtpreis wird dabei automatisch neu berechnet und sofort aktualisiert.
           </>}
+        />
+
+        <ProjectText
+          textTitel='Architektur von Datenbank'
+          textSubtitel='Code'
+          textParagraph={<>
+          Der Schwerpunkt lag darauf, die Produktdaten klar zu strukturieren und die UI-Elemente dynamisch zu generieren.
+          <br /><br />
+          Um die Produkte zu organisieren, habe ich ein JavaScript Datei erstellt, wo ich die Array von Objekten mit allen relevanten Informationen enthalten(Name, Preis, Menge und Bild) enthält. Dadurch wird sowohl die Pflege als auch das Rendering im Frontend vereinfacht.
+          </>}
+        />
+
+        <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+        <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+
+        <ProjectText
+          textParagraph={<>
+          Die Struktur in dem Jason Datei wird in Objects kategorisiert.<br />
+          Anbei ist ein Beispiel, wie die Früchtensorte sortiert wird:
+          </>}
+        />
+
+        <ProjectCode
+          lines={[
+            {
+              content: <><span className="code-red">const</span> <span className="code-blue">arrayFruechte</span> = [</>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <>{'{ '}<span className="code-purple">name</span>: 'Cranberries', <span className="code-purple">preis</span>: 0.40, <span className="code-purple">amount</span>: 65, <span className="code-purple">pic</span>: ''{'}'},{}</>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <>{'{ '}<span className="code-purple">name</span>: 'Ananasstücke', <span className="code-purple">preis</span>: 0.60, <span className="code-purple">amount</span>: 50, <span className="code-purple">pic</span>: ''{'}'},{}</>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <>{'{ '}<span className="code-purple">name</span>: 'Apfelringe', <span className="code-purple">preis</span>: 0.70, <span className="code-purple">amount</span>: 35, <span className="code-purple">pic</span>: ''{'}'},{}</>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <>{'{ '}<span className="code-purple">name</span>: 'Datteln', <span className="code-purple">preis</span>: 0.42, <span className="code-purple">amount</span>: 65, <span className="code-purple">pic</span>: ''{'}'},{}</>
+            },
+            {
+              content: <>]</>
+            }
+          ]}
         />
     </div>
   )
