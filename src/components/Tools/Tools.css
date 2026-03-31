@@ -1,0 +1,90 @@
+:root {
+    --Tools-height:40px;
+    --Tools-bottom:50px;
+  }
+
+/* Tablet */
+@media (max-width: 1439px) {
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  :root {
+    --Tools-height:30px;
+    --Tools-bottom:30px;
+  }
+}
+
+
+.Tools{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: fit-content;
+
+    & .tool-container { 
+        color: var(--grey);
+        height: var(--Tools-height);
+        position: relative;
+
+        & svg{height: 100%; width: auto;}
+
+        & .tool-name{
+            position: absolute;
+            font-size: 16px;
+            bottom: var(--Tools-bottom); left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+}
+
+
+
+
+/* Desktop */
+@media (min-width: 1440px){
+    .fill-blanko{fill: white;}
+
+    .tool-container:hover [data-tool="icon-figma"] .color-01 { color: #0acf83; }
+    .tool-container:hover [data-tool="icon-figma"] .color-02 { color: #a259ff; }
+    .tool-container:hover [data-tool="icon-figma"] .color-03 { color: #f24e1e; }
+    .tool-container:hover [data-tool="icon-figma"] .color-04 { color: #ff7262; }
+    .tool-container:hover [data-tool="icon-figma"] .color-05 { color: #1abcfe; }
+
+    .tool-container:hover [data-tool="icon-ae"] { color: #00005B;}
+    .tool-container:hover [data-tool="icon-ae"] .fill-blanko {fill: #9999FF;}
+
+    .tool-container:hover [data-tool="icon-ai"] { color: #300;}
+    .tool-container:hover [data-tool="icon-ai"] .fill-blanko {fill: #ff9a00;}
+
+    .tool-container:hover [data-tool="icon-id"] .color {color: #49021F; }
+    .tool-container:hover [data-tool="icon-id"] .fill-blanko {fill: #FF3366;}
+
+    .tool-container:hover [data-tool="icon-ps"] .color {color: #001E36; }
+    .tool-container:hover [data-tool="icon-ps"] .fill-blanko {fill: #31A8FF;}
+
+    .tool-container:hover [data-tool="icon-css"] .color {color: #2965f1; }
+    .tool-container:hover [data-tool="icon-html"] .color {color: #E44D26; }
+    .tool-container:hover [data-tool="icon-js"] .color {color: #f8d069; }
+
+    .tool-container:hover [data-tool="icon-py"] .color-01 { color: #809dfe; }
+    .tool-container:hover [data-tool="icon-py"] .color-02 { color: #f8d069; }
+
+    .tool-container:hover [data-tool="icon-react"] { color: #61DBFB;}
+
+    .tool-container:hover [data-tool="icon-sql"] { color: #c02a2a;}
+
+    .tool-container:hover [data-tool="icon-django"] { color: #3ca57d;}
+
+    .tool-container:hover [data-tool="icon-firebase"] { color: #FFCA28;}
+
+    .tool-container:hover [data-tool="icon-git"] { color: #7125BE;}
+
+    .tool-container:hover [data-tool="icon-node"] { color: #689f63;}
+
+    .tool-container:hover [data-tool="icon-tsx"] { color: #3178c6;}
+
+    
+
+}

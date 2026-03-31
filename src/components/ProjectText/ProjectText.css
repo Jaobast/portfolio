@@ -1,0 +1,22 @@
+.ProjectText{
+    padding: 0 var(--padding);
+
+    & .titel{
+        display: flex; flex-direction: column-reverse;
+    }
+    & h3{font-size: var(--txt-theme); line-height: 0.8;}
+    & h4{font-size: var(--txt-text); color: var(--orange);}
+    & p{
+        max-width: var(--max-width);
+    }
+
+    & .text-block{
+        display: flex; flex-direction: column;
+        gap: var(--gap);
+    }
+
+    & .text-bold{
+        font-weight: 500;
+        color: black;
+    }
+}
