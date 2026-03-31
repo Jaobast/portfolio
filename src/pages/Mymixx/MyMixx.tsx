@@ -10,8 +10,8 @@ function MyMixx() {
         <Nav/>
         <ProjectHeader
           name='MyMixx'
-          logo='/project/MyMixx/logo.svg'
-          video='/project/MyMixx/cover.mp4'
+          logo='/portfolio/project/MyMixx/logo.svg'
+          video='/portfolio/project/MyMixx/cover.mp4'
           description={<>
           Mymixx ist ein Müsli-Store, in dem sich jeder sein persönliches Müsli zusammenstellen kann. Von der Basis bis zu den Toppings.
           <br /><br />
@@ -28,8 +28,8 @@ function MyMixx() {
           ]}
         />
 
-        <img className='img-project height no-mobile' src="/project/MyMixx/bilder/07.png" alt="bild" />
-        <img className='img-project only-mobile' src="/project/MyMixx/bilder/07.png" alt="bild" />
+        <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/07.png" alt="bild" />
+        <img className='img-project only-mobile' src="/portfolio/project/MyMixx/bilder/07.png" alt="bild" />
 
 
         <ProjectText
@@ -42,8 +42,8 @@ function MyMixx() {
           </>}
         />
 
-        <img className='img-project padding no-mobile' src="/project/MyMixx/bilder/05.png" alt="bild" />
-        <img className='img-project padding only-mobile' src="/project/MyMixx/bilder/03.png" alt="bild" />
+        <img className='img-project padding no-mobile' src="/portfolio/project/MyMixx/bilder/05.png" alt="bild" />
+        <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.png" alt="bild" />
 
         <ProjectText
           textTitel='Components'
@@ -51,8 +51,8 @@ function MyMixx() {
         />
 
         <div className="img-duo">
-          <img src="/project/MyMixx/bilder/10.png" alt="bild" />
-          <img src="/project/MyMixx/bilder/11.png" alt="bild" />
+          <img src="/portfolio/project/MyMixx/bilder/10.png" alt="bild" />
+          <img src="/portfolio/project/MyMixx/bilder/11.png" alt="bild" />
         </div>
 
         <ProjectText

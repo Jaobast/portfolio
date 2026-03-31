@@ -9,7 +9,7 @@ function Startseite() {
         <Nav />
         <header className='screen'>
             <video autoPlay loop muted playsInline>
-                <source src="code/video/header-video.mp4" type="video/mp4"/>
+                <source src="/portfolio/video/header-video.mp4" type="video/mp4"/>
             </video>
             <article>
                 <h1>
@@ -51,13 +51,13 @@ function Startseite() {
 
                         <div className="socialmedia">
                             <a href="https://github.com/Jaobast" target="_blank" rel="noreferrer">
-                                <img src="/svg/socialmedia-github.svg" alt="github link" />
+                                <img src="/portfolio/svg/socialmedia-github.svg" alt="github link" />
                             </a>
                             <a href="https://www.instagram.com/joaobastos.web" target="_blank" rel="noreferrer">
-                                <img src="/svg/socialmedia-insta.svg" alt="insta link" />
+                                <img src="/portfolio/svg/socialmedia-insta.svg" alt="insta link" />
                             </a>
                             <a href="https://www.linkedin.com/in/joao-bastos-profil/" target="_blank" rel="noreferrer">
-                                <img src="/svg/socialmedia-linkedin.svg" alt="linkedin link" />
+                                <img src="/portfolio/svg/socialmedia-linkedin.svg" alt="linkedin link" />
                             </a>
                         </div>
                     </div>
@@ -68,38 +68,38 @@ function Startseite() {
                         </a>
                         <button className="portfolio-download">
                             Portfolio PDF
-                            <img src="/svg/download.svg" alt="" />
+                            <img src="/portfolio/svg/download.svg" alt="" />
                         </button>
                     </div>
                 </article>
 
-                <img className="pic-me" src="/img/me-about.png" alt="" />
+                <img className="pic-me" src="/portfolio/img/me-about.png" alt="" />
             </section>
 
             <section className='projects'>
                 <ProjectCard
                     name='Dabei'
-                    img='/project/Dabei/card.jpg'
+                    img='/portfolio/project/Dabei/card.jpg'
                 />
 
                 <ProjectCard
                     name='Caflex'
-                    img='/project/Caflex/card.jpg'
+                    img='/portfolio/project/Caflex/card.jpg'
                 />
 
                 <ProjectCard
                     name='Praxis'
-                    img='/project/Praxis/card.jpg'
+                    img='/portfolio/project/Praxis/card.jpg'
                 />
 
                 <ProjectCard
                     name='MyMixx'
-                    img='/project/MyMixx/card.jpg'
+                    img='/portfolio/project/MyMixx/card.jpg'
                 />
 
                 <ProjectCard
                     name='Essencial'
-                    img='/project/Essencial/card.jpg'
+                    img='/portfolio/project/Essencial/card.jpg'
                 />
 
             </section>
