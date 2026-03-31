@@ -1,0 +1,205 @@
+.Startseite header{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+
+    padding: var(--padding);
+
+    display: flex; flex-direction: column;
+    gap: 50px;
+    background-color: white;
+
+    & video{
+        width: 100%;
+        object-fit: cover;
+        border-radius: var(--border);
+        min-height: 0;
+        flex: 1;
+    }
+
+    & article{
+        display: flex; justify-content: space-between;
+        gap: var(--gap);
+
+        & h1{
+            width: fit-content;
+            white-space: nowrap;
+            font-size: calc(var(--txt-text) * 1.2);
+
+            & span{
+                font-size: 100px;
+                font-weight: 500;
+                color: var(--orange);
+                line-height: 0.8;
+            }
+        }
+
+        & p{
+            width: 100%;
+            max-width: 600px;
+        }
+    }
+}
+
+.Startseite main{
+    margin-top: 100svh;
+    padding: 0 var(--padding);
+    width: 100%;
+    overflow: hidden;
+}
+
+.Startseite .about{
+    display: flex;
+    gap: var(--gap);
+    padding: calc(4 * var(--padding)) 0 var(--padding);
+
+    & img.pic-me{
+        border-radius: var(--border);
+        min-width: 0;
+        min-height: 0;
+        flex: 1;
+    }
+
+    & article{
+        flex: 1;
+        height: 100%;
+        display: flex; flex-direction: column;
+        justify-content: space-between;
+
+        & .tecnologie{
+            display: flex; flex-direction: column;
+            gap: 10px;
+
+            & h2{ line-height: 0.8; color: var(--orange); font-weight: 500;}
+
+            & ul{ display: flex; gap: var(--gap);}
+            & ul li{ font-size: calc(var(--txt-text) * 1.1);}
+        }
+
+        & .text {
+            display: flex; flex-direction: column;
+            gap: var(--gap);
+
+            & p{ max-width: 500px;}
+
+            & .socialmedia{
+                display: flex;
+                gap: var(--gap);
+
+                & img{ height: 30px;}
+            }
+        }
+
+        & .buttons{
+            display: flex; gap:var(--gap);
+
+            & button, a{
+                width: fit-content;
+                padding: 4px 16px; border-radius: 100px;
+                border: 1px solid var(--grey);
+                display: block;
+            }
+            & button {
+                background-color: var(--grey); color: white;
+                font-size: calc(var(--txt-text) / 1.2);
+            }
+            & a{
+                background-color: white; color: var(--grey);
+                font-size: var(--txt-text);
+            }
+
+            & button img{
+                height: 17px;
+                margin: 0 0 -1px 5px;
+            }
+        }
+
+
+    }
+}
+
+.Startseite .projects{
+    padding-top: 80px;
+    display: flex; flex-direction: column;
+    gap: calc(var(--gap) * 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop */
+@media (min-width: 1440px){
+    .Startseite .about article button.portfolio-download:hover{
+        background-color: var(--orange); color: white;
+        border-color: var(--orange);
+    }
+
+    .Startseite .about article .buttons a:hover{
+        background-color: white; color: var(--orange);
+        outline: 2px solid var(--orange);
+        outline-offset: -2px;
+    }
+}
+
+
+
+/* Tablet */
+@media (max-width: 1439px) {
+    .Startseite header{
+        & article h1 span{font-size: 60px;}
+    }
+
+    .Startseite .about article .text .socialmedia img{height: 28px;}
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .Startseite header{
+        & article{
+            flex-direction: column;
+            & h1 span{font-size: 40px;}
+            & p{max-width: 450px;}
+        }
+    }
+
+    .Startseite .about{
+        flex-direction: column-reverse;
+
+        & img.pic-me{
+            flex: none;
+            aspect-ratio: 5/2;
+            margin-bottom: calc(2 * var(--padding));
+            object-position: center 40%;
+        }
+    }
+
+    .Startseite .about article .text .socialmedia img{height: 24px;}
+
+    .Startseite .about article .buttons a{
+        background-color: white; color: var(--orange);
+        outline: 1px solid var(--orange);
+        outline-offset: -1px;
+    }
+
+    .Startseite .about article .buttons button{
+        background-color: var(--orange); color: white;
+        border-color: var(--orange);
+    }
+
+    .Startseite .projects{ padding-top: 50px}
+}
