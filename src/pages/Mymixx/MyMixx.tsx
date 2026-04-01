@@ -47,7 +47,7 @@ function MyMixx() {
         <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.png" alt="bild" />
 
         <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
-        <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+        <img className='img-project img-02 only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
 
 
         <ProjectText
@@ -222,8 +222,7 @@ function MyMixx() {
           ]}
         />
 
-        <img className='img-project no-mobile' src="/portfolio/project/MyMixx/bilder/13.png" alt="bild" />
-        <img className='img-project only-mobile' src="/portfolio/project/MyMixx/bilder/13.png" alt="bild" />
+        <img className='img-project img-01' src="/portfolio/project/MyMixx/bilder/13.png" alt="bild" />
 
         <ProjectText
           textTheme='Verwendung von JSON zur Sortierung der Produkte'
