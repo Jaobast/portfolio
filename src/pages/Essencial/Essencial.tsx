@@ -2,6 +2,7 @@ import './Essencial.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import ProjectText from '../../components/ProjectText/ProjectText'
+import ProjectCode from '../../components/ProjectCode/ProjectCode'
 
 function Essencial() {
 
@@ -52,10 +53,102 @@ function Essencial() {
           </>}
         />
 
-        <img className='img-project padding' src="/portfolio/project/Essencial/bilder/05.png" alt="bild" />
+        <img className='img-project padding no-mobile' src="/portfolio/project/Essencial/bilder/05.png" alt="bild" />
+        <img className='img-project padding only-mobile' src="/portfolio/project/Essencial/bilder/06.png" alt="bild" />
 
         <img className='img-project img-02 no-mobile' src="/portfolio/project/Essencial/bilder/07.png" alt="bild" />
-        <img className='img-project only-mobile' src="/portfolio/project/Essencial/bilder/07.png" alt="bild" />
+        <img className='img-project img-03 only-mobile' src="/portfolio/project/Essencial/bilder/07.png" alt="bild" />
+
+        <ProjectText
+          textTitel='React und Components'
+          textSubtitel='Front-end'
+          textParagraph={<>
+          Mit React und einer komponentenbasierten Architektur wird die Website modular und skalierbar aufgebaut.
+          <br /><br />
+          Die MassageType-Komponente nimmt Daten über Props entgegen (Name, Beschreibung, Bild und Preisstufen) und rendert diese dynamisch. Neue Angebote oder Massagearten lassen sich dadurch einfach durch das Hinzufügen eines neuen Datensatzes einpflegen, ohne den bestehenden Code zu verändern.
+          <br /><br />
+          Änderungen an der Komponente selbst wirken sich automatisch auf alle Instanzen aus konsistent und wartungsfreundlich.
+          </>}
+        />
+
+        <ProjectCode
+          lines={[
+            {
+              content: <><span className="code-blue">return</span> (</>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <>&lt;<span className="code-red">article</span>&gt;</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>{'{'}imageUrl &amp;&amp; &lt;<span className="code-red">img</span> <span className="code-purple">src</span>={'{'}imageUrl{'}'} <span className="code-purple">alt</span>={'{'}name{'}'} /&gt;{'}'}</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>&lt;<span className="code-red">h2</span>&gt;{'{'}name{'}'}&lt;/<span className="code-red">h2</span>&gt;</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>&lt;<span className="code-red">p</span>&gt;{'{'}description{'}'}&lt;/<span className="code-red">p</span>&gt;</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>&lt;<span className="code-red">div</span>&gt;</>
+            },
+            {
+              gap: 3,
+              indent: 3,
+              content: <>{'{'}priceTiers.<span className="code-blue">map</span>((<span className="code-rosa">tier</span>) =&gt; (</>
+            },
+            {
+              gap: 4,
+              indent: 4,
+              content: <>&lt;<span className="code-red">div</span> <span className="code-purple">key</span>={'{'}tier.minutes{'}'}&gt;</>
+            },
+            {
+              gap: 5,
+              indent: 5,
+              content: <>&lt;<span className="code-red">span</span>&gt;{'{'}tier.minutes{'}'} Minuten&lt;/<span className="code-red">span</span>&gt;</>
+            },
+            {
+              gap: 5,
+              indent: 5,
+              content: <>&lt;<span className="code-red">span</span>&gt;{'{'}tier.price{'}'} €&lt;/<span className="code-red">span</span>&gt;</>
+            },
+            {
+              gap: 4,
+              indent: 4,
+              content: <>&lt;/<span className="code-red">div</span>&gt;</>
+            },
+            {
+              gap: 3,
+              indent: 3,
+              content: <>)){'}'}</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>&lt;/<span className="code-red">div</span>&gt;</>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <>&lt;/<span className="code-red">article</span>&gt;</>
+            },
+            {
+              content: <>);</>
+            },
+          ]}
+        />
+
+        <img className='img-project padding' src="/portfolio/project/Essencial/bilder/09.png" alt="bild" />
+        <img className='img-project padding' src="/portfolio/project/Essencial/bilder/03.png" alt="bild" />
     </div>
   )
 }

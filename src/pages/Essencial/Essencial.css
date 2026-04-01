@@ -7,6 +7,10 @@
     & .img-02{
         width: 60vw;
     }
+
+    & .img-03{
+        margin-top: calc(-1 * var(--gap-main));
+    }
 }
 
 
