@@ -77,6 +77,18 @@ function Startseite() {
             </section>
 
             <section className='projects'>
+
+                <ProjectCard
+                    name='MyMixx'
+                    img='/portfolio/project/MyMixx/card.jpg'
+                />
+
+
+                <ProjectCard
+                    name='Essencial'
+                    img='/portfolio/project/Essencial/card.jpg'
+                />
+
                 <ProjectCard
                     name='Dabei'
                     img='/portfolio/project/Dabei/card.jpg'
@@ -90,16 +102,6 @@ function Startseite() {
                 <ProjectCard
                     name='Praxis'
                     img='/portfolio/project/Praxis/card.jpg'
-                />
-
-                <ProjectCard
-                    name='MyMixx'
-                    img='/portfolio/project/MyMixx/card.jpg'
-                />
-
-                <ProjectCard
-                    name='Essencial'
-                    img='/portfolio/project/Essencial/card.jpg'
                 />
 
             </section>

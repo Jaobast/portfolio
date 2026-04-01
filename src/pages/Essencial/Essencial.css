@@ -1,0 +1,21 @@
+.Essencial{
+
+    & .img-01{
+        margin-top: calc(-1 * var(--gap-main));
+    }
+
+    & .img-02{
+        width: 60vw;
+    }
+}
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+  .Essencial {
+    & .img-01{
+        margin-top: 0px;
+    }
+  }
+}
