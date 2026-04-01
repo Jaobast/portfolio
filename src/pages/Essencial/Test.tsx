@@ -11,7 +11,7 @@ type MassageTypeProps = {
   imageUrl?: string;
 }
 
-export function MassageType({
+function MassageType({
   name,
   description,
   priceTiers,
@@ -36,3 +36,5 @@ export function MassageType({
     </article>
   );
 }
+
+export default MassageType

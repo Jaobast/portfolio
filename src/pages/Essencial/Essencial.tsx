@@ -74,6 +74,28 @@ function Essencial() {
         <ProjectCode
           lines={[
             {
+              content: <><span className="code-blue">function</span> <span className="code-rosa">MassageType</span>({'{'}</>
+            },
+            {
+              indent: 1,
+              content: <><span className="code-purple">name</span>,</>
+            },
+            {
+              indent: 1,
+              content: <><span className="code-purple">description</span>,</>
+            },
+            {
+              indent: 1,
+              content: <><span className="code-purple">priceTiers</span>,</>
+            },
+            {
+              indent: 1,
+              content: <><span className="code-purple">imageUrl</span></>
+            },
+            {
+              content: <>{'}'}: <span className="code-blue">MassageTypeProps</span>) {'{'}</>
+            },
+            {
               content: <><span className="code-blue">return</span> (</>
             },
             {
@@ -142,7 +164,64 @@ function Essencial() {
               content: <>&lt;/<span className="code-red">article</span>&gt;</>
             },
             {
-              content: <>);</>
+              content: <>);{'}'}</>
+            },
+          ]}
+        />
+
+        <ProjectText
+          textParagraph={<>
+          Änderungen an der Komponente selbst wirken sich automatisch auf alle Instanzen aus konsistent und wartungsfreundlich.
+          </>}
+        />
+
+        <ProjectCode
+          lines={[
+            {
+              content: <>&lt;<span className="code-rosa">MassageType</span></>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <><span className="code-purple">name</span>=<span className="code-blue">"Brasilianischer Lymphdrainage"</span></>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <><span className="code-purple">description</span>=<span className="code-blue">"Diese Massage..."</span></>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <><span className="code-purple">imageUrl</span>=<span className="code-blue">"/images/lymphdrainage.jpg"</span></>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <><span className="code-purple">priceTiers</span>={'{'}[</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>{'{ '}<span className="code-purple">minutes</span>: 60, <span className="code-purple">price</span>: 75 {'}'},{}</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>{'{ '}<span className="code-purple">minutes</span>: 90, <span className="code-purple">price</span>: 95 {'}'},{}</>
+            },
+            {
+              gap: 2,
+              indent: 2,
+              content: <>{'{ '}<span className="code-purple">minutes</span>: 120, <span className="code-purple">price</span>: 125 {'}'},{}</>
+            },
+            {
+              gap: 1,
+              indent: 1,
+              content: <>]{'}'}</>
+            },
+            {
+              content: <>/&gt;</>
             },
           ]}
         />
