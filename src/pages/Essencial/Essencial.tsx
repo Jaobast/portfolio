@@ -71,6 +71,10 @@ function Essencial() {
           </>}
         />
 
+        <div className="img-mobile">
+          <img src="/portfolio/project/Essencial/bilder/11.png" alt="bild" />
+        </div>
+
         <ProjectCode
           lines={[
             {
@@ -168,6 +172,10 @@ function Essencial() {
             },
           ]}
         />
+
+        <div className="img-mobile">
+          <img src="/portfolio/project/Essencial/bilder/10.png" alt="bild" />
+        </div>
 
         <ProjectText
           textParagraph={<>
