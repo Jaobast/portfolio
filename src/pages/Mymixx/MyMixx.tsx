@@ -46,7 +46,8 @@ function MyMixx() {
         <img className='img-project padding no-mobile' src="/portfolio/project/MyMixx/bilder/05.png" alt="bild" />
         <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.png" alt="bild" />
 
-        <img className='img-project height' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+        <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+        <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
 
 
         <ProjectText
