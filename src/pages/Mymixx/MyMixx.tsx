@@ -19,12 +19,13 @@ function MyMixx() {
           Zu meinen Aufgaben gehörte die Erweiterung der visuellen Identität, die digitale Umsetzung des Brandings sowie die Gestaltung und Programmierung des Bestellsystems.
           </>}
           tools={[
-            { key: 'icon-figma', label: 'Figma'},
-            { key: 'icon-ae', label: 'AfterEffects'},
-            { key: 'icon-ps', label: 'Photoshop'},
-            { key: 'icon-css', label: 'CSS'},
+            { key: 'icon-react', label: 'React'},
+            { key: 'icon-node', label: 'Node.js'},
+            { key: 'icon-tsx', label: 'TypeScript'},
             { key: 'icon-html', label: 'HTML'},
+            { key: 'icon-css', label: 'CSS'},
             { key: 'icon-js', label: 'JavaScript'},
+            { key: 'icon-figma', label: 'Figma'},
             { key: 'icon-git', label: 'Github'},
           ]}
         />
@@ -323,7 +324,7 @@ function MyMixx() {
 
         <img className='img-project padding' src="/portfolio/project/MyMixx/bilder/06.png" alt="bild" />
 
-        <img className='img-project padding' src="/portfolio/project/MyMixx/bilder/04.png" alt="bild" />
+        <img className='img-project padding img-03' src="/portfolio/project/MyMixx/bilder/04.png" alt="bild" />
 
     </div>
   )
