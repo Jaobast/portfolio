@@ -65,6 +65,68 @@ function MyMixx() {
           </>}
         />
 
+        <ProjectCode
+          lines={[
+            {
+              content: <><span className="code-red">const</span> [<span className="code-blue">isAdded</span>, <span className="code-blue">setIsAdded</span>] = <span className="code-red">useState</span>(<span className="code-purple">false</span>)</>
+            },
+            {
+              content: <></>
+            },
+            {
+              content: <><span className="code-red">const</span> <span className="code-blue">handleClick</span> = () =&gt; {'{'}</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-blue">setIsAdded</span>(<span className="code-blue">prev</span> =&gt; !<span className="code-blue">prev</span>)</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-purple">if</span> (!<span className="code-blue">isAdded</span>) {'{'}</>
+            },
+            {
+              gap: 2,
+              content: <><span className="code-blue">addToMyMixx</span>(<span className="code-blue">product</span>)</>
+            },
+            {
+              gap: 1,
+              content: <>{'}'} <span className="code-purple">else</span> {'{'}</>
+            },
+            {
+              gap: 2,
+              content: <><span className="code-blue">removeFromMyMixx</span>(<span className="code-blue">product</span>)</>
+            },
+            {
+              gap: 1,
+              content: <>{'}'}</>
+            },
+            {
+              content: <>{'}'}</>
+            },
+            {
+              content: <></>
+            },
+            {
+              content: <><span className="code-rosa">&lt;div </span><span className="code-purple">className</span>=<span className="code-red">{'{'}isAdded ? <span className="code-blue">'card card--added'</span> : <span className="code-blue">'card'</span>{'}'}</span><span className="code-rosa">&gt;</span></>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-rosa">&lt;button </span><span className="code-purple">onClick</span>=<span className="code-red">{'{'}</span><span className="code-blue">handleClick</span><span className="code-red">{'}'}</span><span className="code-rosa">&gt;</span></>
+            },
+            {
+              gap: 2,
+              content: <>{'{'}isAdded ? <span className="code-blue">'Entfernen'</span> : <span className="code-blue">'Hinzufügen'</span>{'}'}</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-rosa">&lt;/button&gt;</span></>
+            },
+            {
+              content: <><span className="code-rosa">&lt;/div&gt;</span></>
+            },
+          ]}
+        />
+
         <div className="img-mobile">
           <img src="/portfolio/project/MyMixx/bilder/12.png" alt="bild" />
         </div>
@@ -79,9 +141,88 @@ function MyMixx() {
           </>}
         />
 
+        <ProjectCode
+          lines={[
+            {
+              content: <><span className="code-red">const</span> <span className="code-blue">totalPreis</span> = <span className="code-blue">myMixx</span>.<span className="code-red">reduce</span>((<span className="code-blue">acc</span>, <span className="code-blue">product</span>) =&gt; {'{'}</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-purple">return</span> <span className="code-blue">acc</span> + <span className="code-blue">product</span>.<span className="code-blue">preis</span></>
+            },
+            {
+              content: <>{'}'}, <span className="code-purple">0</span>)</>
+            },
+            {
+              content: <></>
+            },
+            {
+              content: <><span className="code-red">const</span> <span className="code-blue">handleRemove</span> = (<span className="code-blue">product</span>) =&gt; {'{'}</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-blue">setIsAdded</span>(<span className="code-purple">false</span>)</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-blue">removeFromMyMixx</span>(<span className="code-blue">product</span>)</>
+            },
+            {
+              content: <>{'}'}</>
+            },
+            {
+              content: <></>
+            },
+            {
+              content: <><span className="code-rosa">&lt;div </span><span className="code-purple">className</span>=<span className="code-red">"my-mixx"</span><span className="code-rosa">&gt;</span></>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-rosa">&lt;p&gt;</span>Total: {'{'}totalPreis.<span className="code-red">toFixed</span>(<span className="code-purple">2</span>){'}'}&euro;<span className="code-rosa">&lt;/p&gt;</span></>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-rosa">&lt;ul&gt;</span></>
+            },
+            {
+              gap: 2,
+              content: <>{'{'}myMixx.<span className="code-red">map</span>(<span className="code-blue">product</span> =&gt; (</>
+            },
+            {
+              gap: 3,
+              content: <><span className="code-rosa">&lt;li </span><span className="code-purple">key</span>=<span className="code-red">{'{'}</span><span className="code-blue">product</span>.<span className="code-blue">name</span><span className="code-red">{'}'}</span><span className="code-rosa">&gt;</span></>
+            },
+            {
+              gap: 4,
+              content: <>{'{'}product.<span className="code-blue">name</span>{'}'} — {'{'}product.<span className="code-blue">preis</span>.<span className="code-red">toFixed</span>(<span className="code-purple">2</span>){'}'}&euro;</>
+            },
+            {
+              gap: 4,
+              content: <><span className="code-rosa">&lt;button </span><span className="code-purple">onClick</span>=<span className="code-red">{'{'}</span>() =&gt; <span className="code-blue">handleRemove</span>(<span className="code-blue">product</span>)<span className="code-red">{'}'}</span><span className="code-rosa">&gt;</span>X<span className="code-rosa">&lt;/button&gt;</span></>
+            },
+            {
+              gap: 3,
+              content: <><span className="code-rosa">&lt;/li&gt;</span></>
+            },
+            {
+              gap: 2,
+              content: <>)){'}'}</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-rosa">&lt;/ul&gt;</span></>
+            },
+            {
+              content: <><span className="code-rosa">&lt;/div&gt;</span></>
+            },
+          ]}
+        />
+
+        <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+        <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+
         <ProjectText
-          textTitel='Architektur von Datenbank'
-          textSubtitel='Code'
+          textTheme='Nutzung von Json'
           textParagraph={<>
           Der Schwerpunkt lag darauf, die Produktdaten klar zu strukturieren und die UI-Elemente dynamisch zu generieren.
           <br /><br />
@@ -89,8 +230,6 @@ function MyMixx() {
           </>}
         />
 
-        <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
-        <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
 
         <ProjectText
           textParagraph={<>
@@ -129,6 +268,57 @@ function MyMixx() {
             }
           ]}
         />
+
+        <ProjectText
+          textParagraph={<>
+          Und die Nutzung ist ebenso einfach.
+          </>}
+        />
+
+        <ProjectCode
+          lines={[
+            {
+              content: <><span className="code-blue">arrayFruechte</span><span className="code-red">.forEach</span>(<span className="code-blue">product</span> =&gt; {'{'}</>
+            },
+            {
+              gap: 1,
+              content: <><span className="code-blue">productListBasis</span>.innerHTML += {'`'}</>
+            },
+            {
+              gap: 2,
+              content: <><span className="code-rosa">&lt;div </span><span className="code-purple">class</span>=<span className="code-red">"product"</span><span className="code-rosa">&gt;</span></>
+            },
+            {
+              gap: 3,
+              content: <><span className="code-rosa">&lt;p </span><span className="code-purple">class</span>=<span className="code-red">"product-name"</span><span className="code-rosa">&gt;</span>${'{'}<span className="code-blue">product</span>.<span className="code-blue">name</span>{'}'}<span className="code-rosa">&lt;/p&gt;</span></>
+            },
+            {
+              gap: 3,
+              content: <><span className="code-rosa">&lt;img </span><span className="code-purple">src</span> = <span className="code-red">"${'{'}product.pic{'}'}"</span><span className="code-rosa">&gt;</span></>
+            },
+            {
+              gap: 3,
+              content: <><span className="code-rosa">&lt;p </span><span className="code-purple">class</span>=<span className="code-red">'menge'</span><span className="code-rosa">&gt;</span>${'{'}<span className="code-blue">product</span>.<span className="code-blue">amount</span>{'}'}g<span className="code-rosa">&lt;/p&gt;</span></>
+            },
+            {
+              gap: 3,
+              content: <><span className="code-rosa">&lt;p </span><span className="code-purple">class</span>=<span className="code-red">'preis'</span><span className="code-rosa">&gt;</span>${'{'}<span className="code-blue">product</span>.<span className="code-blue">preis</span>.<span className="code-red">toFixed</span>(2){'}'}&euro;<span className="code-rosa">&lt;/p&gt;</span></>
+            },
+            {
+              gap: 2,
+              content: <><span className="code-rosa">&lt;/div&gt;</span></>
+            },
+            {
+              gap: 1,
+              content: <>{'\`'}</>
+            },
+            {
+              content: <>{'});'}</>
+            },
+          ]}
+        />
+
+        <img className='img-project padding' src="/portfolio/project/MyMixx/bilder/04.png" alt="bild" />
     </div>
   )
 }
