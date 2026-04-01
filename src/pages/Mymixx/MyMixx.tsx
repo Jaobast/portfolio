@@ -218,11 +218,11 @@ function MyMixx() {
           ]}
         />
 
-        <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
-        <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+        <img className='img-project no-mobile' src="/portfolio/project/MyMixx/bilder/13.png" alt="bild" />
+        <img className='img-project only-mobile' src="/portfolio/project/MyMixx/bilder/13.png" alt="bild" />
 
         <ProjectText
-          textTheme='Nutzung von Json'
+          textTheme='Verwendung von JSON zur Sortierung der Produkte'
           textParagraph={<>
           Der Schwerpunkt lag darauf, die Produktdaten klar zu strukturieren und die UI-Elemente dynamisch zu generieren.
           <br /><br />
