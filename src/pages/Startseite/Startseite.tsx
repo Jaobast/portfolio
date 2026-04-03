@@ -83,6 +83,10 @@ function Startseite() {
                     img='/portfolio/project/MyMixx/card.jpg'
                 />
 
+                <ProjectCard
+                    name='Caflex'
+                    img='/portfolio/project/Caflex/card.jpg'
+                />
 
                 <ProjectCard
                     name='Essencial'
@@ -92,11 +96,6 @@ function Startseite() {
                 <ProjectCard
                     name='Dabei'
                     img='/portfolio/project/Dabei/card.jpg'
-                />
-
-                <ProjectCard
-                    name='Caflex'
-                    img='/portfolio/project/Caflex/card.jpg'
                 />
 
                 <ProjectCard
