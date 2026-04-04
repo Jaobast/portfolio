@@ -24,7 +24,9 @@
         & h1{
             width: fit-content;
             white-space: nowrap;
-            font-size: calc(var(--txt-text) * 1.2);
+            font-size: calc(var(--txt-text));
+            color: var(--grey);
+            font-weight: 300;
 
             & span{
                 font-size: 100px;
@@ -121,7 +123,7 @@
 .Startseite .projects{
     padding-top: 80px;
     display: flex; flex-direction: column;
-    gap: calc(var(--gap) * 1);
+    gap: calc(var(--gap) * 1.3);
 }
 
 

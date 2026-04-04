@@ -4,9 +4,10 @@ import './ProjectCard.css'
 type cardProps= {
     img: string,
     name: string,
+    number: string,
 }
 
-function ProjectCard({img, name}: cardProps) {
+function ProjectCard({img, name, number}: cardProps) {
 
     const navigate = useNavigate();
 
@@ -18,8 +19,15 @@ function ProjectCard({img, name}: cardProps) {
 
   return (
     <div className='ProjectCard' onClick={openProject}>
-        <img src={img} alt="" />
-        <p>{name}</p>
+        <div className="img-container">
+            <img src={img} alt="project cover" />
+            <button className="bttn">Projekt anschauen</button>
+        </div>
+        <div className="name-container text-block">
+            <p className="name">{name}</p>
+            <p className="number">{number}</p>
+
+        </div>
     </div>
   )
 }

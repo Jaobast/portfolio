@@ -81,26 +81,31 @@ function Startseite() {
                 <ProjectCard
                     name='MyMixx'
                     img='/portfolio/project/MyMixx/card.jpg'
+                    number= '01'
                 />
 
                 <ProjectCard
                     name='Caflex'
                     img='/portfolio/project/Caflex/card.jpg'
+                    number='02'
                 />
 
                 <ProjectCard
                     name='Essencial'
                     img='/portfolio/project/Essencial/card.jpg'
+                    number='03'
+                />
+
+                <ProjectCard
+                    name='Praxis Lounge'
+                    img='/portfolio/project/Praxis/card.jpg'
+                    number='05'
                 />
 
                 <ProjectCard
                     name='Dabei'
                     img='/portfolio/project/Dabei/card.jpg'
-                />
-
-                <ProjectCard
-                    name='Praxis'
-                    img='/portfolio/project/Praxis/card.jpg'
+                    number='04'
                 />
 
             </section>
