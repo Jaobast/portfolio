@@ -6,6 +6,8 @@ type ProjectHeaderProps = {
     img?: string,
     logo: string,
     name: string,
+    linkWebsite?: string,
+    linkGithub?: string,
     description?: React.ReactNode,
     tools?: {
         key: string
@@ -13,7 +15,7 @@ type ProjectHeaderProps = {
     }[]
 }
 
-function ProjectHeader({video, img, logo, name, description, tools}: ProjectHeaderProps) {
+function ProjectHeader({video, img, logo, name, description, tools, linkWebsite, linkGithub}: ProjectHeaderProps) {
 
     return (
         <header className='ProjectHeader'>
@@ -40,6 +42,29 @@ function ProjectHeader({video, img, logo, name, description, tools}: ProjectHead
                 <p className="text">{description}</p>
 
                 <Tools tools={tools} />
+
+                <div className="buttons-container">
+                    {
+                        linkWebsite?
+                        <button className='bttn website'>
+                            <a href={linkWebsite} target="_blank" rel="noopener noreferrer">
+                                Projekt live sehen
+                            </a>
+                        </button>
+                        : ""
+                    }
+                    {
+                        linkGithub?
+                        <button className='bttn github'>
+                            <a href={linkGithub} target="_blank" rel="noopener noreferrer">
+                                Code auf Github
+                            </a>
+                        </button>
+                        : ""
+                    }
+
+                    
+                </div>
             </section>
         </header>
     )

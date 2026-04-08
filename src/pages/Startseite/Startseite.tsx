@@ -1,6 +1,7 @@
 import './Startseite.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import Footer from '../../components/Footer/Footer'
 
 function Startseite() {
 
@@ -110,6 +111,8 @@ function Startseite() {
 
             </section>
         </main>
+
+        <Footer/>
     </div>
     )
 
