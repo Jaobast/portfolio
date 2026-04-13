@@ -13,7 +13,7 @@ function Praxis() {
 
         <main className='project'>
           <ProjectHeader
-              name='Praxis'
+              name='Praxis Lounge'
               logo='/portfolio/project/Praxis/logo.svg'
               img='/portfolio/project/Praxis/cover.jpg'
               description={<>

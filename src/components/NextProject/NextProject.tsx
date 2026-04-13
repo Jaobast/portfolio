@@ -10,7 +10,12 @@ type NextProjectProps = {
 function NextProject({thisProject}: NextProjectProps) {
     const navigate = useNavigate();
 
-    const filteredProjects = projects.filter(p => p !== thisProject);
+    const currentIndex = projects.indexOf(thisProject);
+
+    const filteredProjects = [
+        ...projects.slice(currentIndex + 1),
+        ...projects.slice(0, currentIndex)
+    ];
 
     function openProject(project: string) {
         setTimeout(() => {
@@ -19,6 +24,7 @@ function NextProject({thisProject}: NextProjectProps) {
     }
 
     return (
+        
         <div className='NextProject'>
             <h2 className='text-block'>Vielleicht gefällt es dir noch</h2>
             <div>

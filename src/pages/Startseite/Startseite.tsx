@@ -99,6 +99,7 @@ function Startseite() {
 
                 <ProjectCard
                     name='Praxis Lounge'
+                    nameLink='Praxis'
                     img='/portfolio/project/Praxis/card.jpg'
                     number='05'
                 />

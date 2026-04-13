@@ -1,5 +1,33 @@
-.Caflex{
-    & .img-01{
-        width: 65%;
+
+/* Desktop */
+@media (min-width: 1440px){
+    .Caflex{
+        & .img-02{
+            width: 65%;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 1439px) and (min-width: 768px) {
+    .Caflex{
+        & .img-02{
+            width: 65%;
+        }
+    }
+        
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .Caflex{
+        & .img-01{
+            width: 200%;
+            margin-left: -50%;
+        }
+        & .img-02{
+            width: 140%;
+            margin-left: -20%;
+        }
     }
 }

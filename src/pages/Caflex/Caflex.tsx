@@ -5,6 +5,7 @@ import ProjectText from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
+import MotionImage from '../../components/MotionImage/MotionImage'
 
 function Caflex() {
 
@@ -39,8 +40,17 @@ function Caflex() {
 
           />
 
-          <img className='img-project height no-mobile' src="/portfolio/project/Caflex/bilder/01.png" alt="bild" />
-          <img className='img-project only-mobile' src="/portfolio/project/Caflex/bilder/02.png" alt="bild" />
+          <MotionImage
+            img='/portfolio/project/Caflex/bilder/01.png'
+            height
+            noMobile
+          />
+
+          <MotionImage
+            img='/portfolio/project/Caflex/bilder/01.png'
+            onlyMobile
+            extraClass='img-01'
+          />
 
           <ProjectText
             textTitel='Bunt. Vielfältig. Möglich'
@@ -160,8 +170,10 @@ function Caflex() {
             </>}
           />
 
-          <img className='img-project no-mobile img-01' src="/portfolio/project/Caflex/bilder/08.png" alt="bild" />
-          <img className='img-project only-mobile' src="/portfolio/project/Caflex/bilder/09.png" alt="bild" />
+          <MotionImage
+            img='/portfolio/project/Caflex/bilder/08.png'
+            extraClass='img-02'
+          />
 
           <NextProject thisProject='Caflex'/>
 

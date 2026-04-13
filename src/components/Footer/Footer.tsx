@@ -17,7 +17,10 @@ function Footer() {
                     </div>
                     <a href="https://github.com/Jaobast/portfolio" target="_blank" rel="noopener noreferrer">
                         <p className='bold'>GitHub Repository</p>
-                        <p>Portfolio</p>
+                        <div>
+                            <p>Portfolio</p>
+                            <img src="/portfolio/svg/arrow.svg" alt="pfeil icon" />
+                        </div>
                     </a>
                 </div>
 
@@ -29,13 +32,16 @@ function Footer() {
 
                     <a href="https://www.linkedin.com/in/joao-bastos-profil/" target="_blank" rel="noopener noreferrer">
                         <p className='bold'>Lass uns vernetzen</p>
-                        <p>LinkedIn</p>
+                        <div>
+                            <p>LinkedIn</p>
+                            <img src="/portfolio/svg/arrow.svg" alt="pfeil icon" />
+                        </div>
                     </a>
 
                 </div>
             </div>
         </div>
-     <img src="/portfolio/svg/logo.svg" alt="João Bastos logo" />
+     <img src="/portfolio/svg/logo.svg" alt="João Bastos logo"  className='logo'/>
     </div>
   )
 }
