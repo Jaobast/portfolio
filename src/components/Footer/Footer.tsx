@@ -15,10 +15,10 @@ function Footer() {
                         <p className='bold'>Aktuaisiert in</p>
                         <p>2026</p>
                     </div>
-                    <div className="info">
+                    <a href="https://github.com/Jaobast/portfolio" target="_blank" rel="noopener noreferrer">
                         <p className='bold'>GitHub Repository</p>
                         <p>Portfolio</p>
-                    </div>
+                    </a>
                 </div>
 
                 <div className="info-column">
@@ -26,10 +26,12 @@ function Footer() {
                         <p className='bold'>Für weitere Frage:</p>
                         <p>joaobasto@outlook.de</p>
                     </div>
-                    <div className="info">
-                        <p className='bold'>GitHub Repository</p>
-                        <p>Portfolio</p>
-                    </div>
+
+                    <a href="https://www.linkedin.com/in/joao-bastos-profil/" target="_blank" rel="noopener noreferrer">
+                        <p className='bold'>Lass uns vernetzen</p>
+                        <p>LinkedIn</p>
+                    </a>
+
                 </div>
             </div>
         </div>

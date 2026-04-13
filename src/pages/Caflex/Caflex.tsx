@@ -4,6 +4,7 @@ import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import ProjectText from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
+import NextProject from '../../components/NextProject/NextProject'
 
 function Caflex() {
 
@@ -161,6 +162,8 @@ function Caflex() {
 
           <img className='img-project no-mobile img-01' src="/portfolio/project/Caflex/bilder/08.png" alt="bild" />
           <img className='img-project only-mobile' src="/portfolio/project/Caflex/bilder/09.png" alt="bild" />
+
+          <NextProject thisProject='Caflex'/>
 
         </main>
 

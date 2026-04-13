@@ -1,0 +1,62 @@
+:root{
+    --border-next: 36px;
+    --gap-next: 28px;
+}
+
+
+/* Tablet */
+@media (max-width: 1439px) and (min-width: 768px) {
+    :root{
+        --border-next: 16px;
+        --gap-next: 20px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    :root{
+        --border-next: 12px;
+        --gap-next: 12px;
+    }
+}
+
+
+
+.NextProject{
+    display: flex; flex-direction: column; gap: calc(var(--gap) / 1.5);
+    padding: 0 var(--padding);
+
+    & h2{
+            font-size: calc(var(--txt-theme) / 1.2);
+    }
+
+    & div{
+        width: 100%;
+        height: fit-content;
+
+        display: flex; gap: var(--gap-next);
+
+        & button{
+            width: 25%;
+            aspect-ratio: 1/1;
+            height: auto;
+            padding: 0;
+            border: none;
+            border-radius: var(--border-next);
+            overflow: hidden;
+
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .NextProject div button{
+        width: 33%;
+    }
+}

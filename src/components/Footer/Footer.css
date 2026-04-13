@@ -24,6 +24,10 @@
             & .info-column{
                 display: flex; flex-direction: column; gap: calc(var(--gap) * 1);
 
+                & a{
+                    display: flex; flex-direction: column;
+                }
+
                 & .bold{color: black; font-weight: 500;}
             }
         }

@@ -4,6 +4,7 @@ import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import ProjectText from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
+import NextProject from '../../components/NextProject/NextProject'
 
 function MyMixx() {
 
@@ -330,6 +331,8 @@ function MyMixx() {
           <img className='img-project padding' src="/portfolio/project/MyMixx/bilder/06.png" alt="bild" />
 
           <img className='img-project padding img-03' src="/portfolio/project/MyMixx/bilder/04.png" alt="bild" />
+
+          <NextProject thisProject='MyMixx'/>
 
         </main>
 

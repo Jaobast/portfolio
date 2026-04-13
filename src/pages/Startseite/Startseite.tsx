@@ -28,7 +28,7 @@ function Startseite() {
         </header>
 
         <main>
-            <section className='about screen'>
+            <section className='about'>
                 <article>
                     <div className="tecnologie">
                         <h2> Frontend <br /> Entwickler </h2>

@@ -4,6 +4,7 @@ import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import ProjectText from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
+import NextProject from '../../components/NextProject/NextProject'
 
 function Essencial() {
 
@@ -13,23 +14,23 @@ function Essencial() {
 
         <main className='project'>
           <ProjectHeader
-          name='Essencial'
-          logo='/portfolio/project/Essencial/logo.svg'
-          video='/portfolio/project/Essencial/cover.mp4'
-          description={<>
-          Essencial ist ein Massage-Salon, der Ruhe und Wohlbefinden in den Mittelpunkt stellt. Die visuelle Identität und die Website wurden von mir entwickelt.
-          <br /><br />
-          Auf der Website werden die Professionalität und Philosophie der Therapeutin hervorgehoben sowie die verschiedenen Angebote übersichtlich präsentiert.
-          </>}
-          tools={[
-              { key: 'icon-react', label: 'React'},
-              { key: 'icon-node', label: 'Node.js'},
-              { key: 'icon-tsx', label: 'TypeScript'},
-              { key: 'icon-html', label: 'HTML'},
-              { key: 'icon-css', label: 'CSS'},
-              { key: 'icon-js', label: 'JavaScript'},
-              { key: 'icon-figma', label: 'Figma'}
-            ]}
+            name='Essencial'
+            logo='/portfolio/project/Essencial/logo.svg'
+            video='/portfolio/project/Essencial/cover.mp4'
+            description={<>
+            Essencial ist ein Massage-Salon, der Ruhe und Wohlbefinden in den Mittelpunkt stellt. Die visuelle Identität und die Website wurden von mir entwickelt.
+            <br /><br />
+            Auf der Website werden die Professionalität und Philosophie der Therapeutin hervorgehoben sowie die verschiedenen Angebote übersichtlich präsentiert.
+            </>}
+            tools={[
+                { key: 'icon-react', label: 'React'},
+                { key: 'icon-node', label: 'Node.js'},
+                { key: 'icon-tsx', label: 'TypeScript'},
+                { key: 'icon-html', label: 'HTML'},
+                { key: 'icon-css', label: 'CSS'},
+                { key: 'icon-js', label: 'JavaScript'},
+                { key: 'icon-figma', label: 'Figma'}
+              ]}
           />
 
           <img className='img-project' src="/portfolio/project/Essencial/bilder/08.png" alt="bild" />
@@ -239,6 +240,8 @@ function Essencial() {
 
           <img className='img-project padding' src="/portfolio/project/Essencial/bilder/09.png" alt="bild" />
           <img className='img-project padding' src="/portfolio/project/Essencial/bilder/03.png" alt="bild" />
+
+          <NextProject thisProject='Essencial'/>
 
         </main>
 

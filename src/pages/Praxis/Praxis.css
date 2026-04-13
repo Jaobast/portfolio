@@ -1,0 +1,19 @@
+
+
+/* Desktop */
+@media (min-width: 1440px){
+}
+
+/* Tablet */
+@media (max-width: 1439px) and (min-width: 768px){
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .Praxis{
+        & .img-02{
+            width: 200vw;
+        }
+    }
+
+}
