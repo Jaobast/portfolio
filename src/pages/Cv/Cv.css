@@ -1,0 +1,70 @@
+.Cv{
+    display: flex;
+    justify-content: center; align-items: center;
+    height: 100svh; width: 100vw;
+    max-width: 100vw;
+
+    & img.lebenslauf{
+        height: 90svh;
+        border-radius: calc(var(--border) / 1.5);
+    }
+
+    & .container{
+        display: flex;
+        justify-content: center; align-items: center;
+        position: relative;
+        width: fit-content; height: fit-content;
+    }
+
+    & button{
+        position: absolute;
+        transform: translate(100% ,0%);
+        top: 0; right: -20px;
+        
+        width: fit-content;
+        font-family: 'Afacad';
+        font-size: var(--txt-text);
+        padding: 5px 10px; border-radius: 100px;
+        background-color: grey; color: white;
+        cursor: pointer;
+
+        display: flex; align-items: center;
+        border: none;
+
+        & img{
+            margin-left: 10px;
+            height: 13px;
+        }
+
+    }
+}
+
+.cv-background{
+    background-color: #EFEFEF;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .Cv{
+        & img.lebenslauf{
+            height: auto;
+            width: calc(100vw - var(--gap))
+        }
+
+        & button{
+        transform: translate(0% ,-100%);
+        top: -10px; left: 0;
+        }
+
+    }
+}
+
+/* Hover */
+@media (hover: hover) and (pointer: fine) {
+    .Cv{
+        & button:hover{
+            background-color: var(--orange);
+
+        }
+    }
+}

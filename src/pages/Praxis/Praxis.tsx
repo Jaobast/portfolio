@@ -4,6 +4,7 @@ import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import ProjectText from '../../components/ProjectText/ProjectText'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
+import MotionImage from '../../components/MotionImage/MotionImage'
 
 function Praxis() {
 
@@ -32,8 +33,19 @@ function Praxis() {
               ]}
           />
 
-          <img className='img-project heigh no-mobile' src="/portfolio/project/Praxis/bilder/06.png" alt="mockup" />
-          <img className='img-project only-mobile' src="/portfolio/project/Praxis/bilder/07.png" alt="mockup" />
+          <MotionImage
+            img='/portfolio/project/Praxis/bilder/06.png'
+            height
+            noMobile
+          />
+
+          <MotionImage
+            img='/portfolio/project/Praxis/bilder/07.png'
+            onlyMobile
+          />
+
+{/*           <img className='img-project heigh no-mobile' src="/portfolio/project/Praxis/bilder/06.png" alt="mockup" />
+          <img className='img-project only-mobile' src="/portfolio/project/Praxis/bilder/07.png" alt="mockup" /> */}
 
           <ProjectText
             textTitel='Lorem ipsum dolor'

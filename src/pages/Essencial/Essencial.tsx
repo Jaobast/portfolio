@@ -5,6 +5,7 @@ import ProjectText from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
+import MotionImage from '../../components/MotionImage/MotionImage'
 
 function Essencial() {
 
@@ -33,7 +34,11 @@ function Essencial() {
               ]}
           />
 
-          <img className='img-project' src="/portfolio/project/Essencial/bilder/08.png" alt="bild" />
+          <MotionImage
+            img='/portfolio/project/Essencial/bilder/08.png'
+            padding
+            extraClass='img-04'
+          />
 
           <ProjectText
             textTitel='Verbindung und Vertrauen'
@@ -238,8 +243,11 @@ function Essencial() {
             ]}
           />
 
-          <img className='img-project padding' src="/portfolio/project/Essencial/bilder/09.png" alt="bild" />
-          <img className='img-project padding' src="/portfolio/project/Essencial/bilder/03.png" alt="bild" />
+
+          <MotionImage
+            img='/portfolio/project/Essencial/bilder/09.png'
+            padding
+          />
 
           <NextProject thisProject='Essencial'/>
 

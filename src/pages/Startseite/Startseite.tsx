@@ -64,7 +64,7 @@ function Startseite() {
                     </div>
 
                     <div className="buttons">
-                        <a className="lebenslauf" href="/pages/lebenslauf.html" target="_blank" rel="noreferrer">
+                        <a className="lebenslauf" href="/portfolio/#/cv" target="_blank" rel="noreferrer">
                         Lebenslauf
                         </a>
                         <button className="portfolio-download">

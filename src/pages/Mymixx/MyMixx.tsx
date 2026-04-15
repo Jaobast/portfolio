@@ -5,6 +5,7 @@ import ProjectText from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
+import MotionImage from '../../components/MotionImage/MotionImage'
 
 function MyMixx() {
 
@@ -36,8 +37,17 @@ function MyMixx() {
             linkWebsite='https://jaobast.github.io/MyMixx/'
           />
 
-          <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/07.png" alt="bild" />
-          <img className='img-project only-mobile' src="/portfolio/project/MyMixx/bilder/07.png" alt="bild" />
+          <MotionImage
+            img='/portfolio/project/MyMixx/bilder/07.png'
+            height
+            noMobile
+          />
+
+          <MotionImage
+            img='/portfolio/project/MyMixx/bilder/09.png'
+            padding
+            onlyMobile
+          />
 
 
           <ProjectText
@@ -52,6 +62,8 @@ function MyMixx() {
 
           <img className='img-project padding no-mobile' src="/portfolio/project/MyMixx/bilder/05.png" alt="bild" />
           <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.png" alt="bild" />
+
+          <img className='img-project padding img-03' src="/portfolio/project/MyMixx/bilder/04.png" alt="bild" />
 
           <img className='img-project height no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
           <img className='img-project img-02 only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
@@ -328,9 +340,12 @@ function MyMixx() {
             ]}
           />
 
-          <img className='img-project padding' src="/portfolio/project/MyMixx/bilder/06.png" alt="bild" />
 
-          <img className='img-project padding img-03' src="/portfolio/project/MyMixx/bilder/04.png" alt="bild" />
+          <MotionImage
+            img='/portfolio/project/MyMixx/bilder/06.png'
+          />
+
+          
 
           <NextProject thisProject='MyMixx'/>
 

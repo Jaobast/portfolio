@@ -36,7 +36,7 @@ function ProjectCard({img, name, nameLink, number}: cardProps) {
                 scale: 1,
                 transition: {
                     duration: 0.4,
-                    scale: { type: "spring", visualDuration: 0.5, bounce: 0.3 },
+                    scale: { type: "spring", visualDuration: 0.5, bounce: 0.4 },
                 }
                 }}
                 viewport={{

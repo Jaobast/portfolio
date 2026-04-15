@@ -8,6 +8,8 @@ import Dabei from "./pages/Dabei/Dabei";
 import Caflex from "./pages/Caflex/Caflex";
 import Praxis from "./pages/Praxis/Praxis";
 
+import Cv from "./pages/Cv/Cv";
+
 function App() {
 
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/Dabei" element={<Dabei />} />
         <Route path="/Praxis" element={<Praxis />} />
         <Route path="/Caflex" element={<Caflex />} />
+        <Route path="/Cv" element={<Cv />} />
       </Routes>
     </HashRouter>
   )

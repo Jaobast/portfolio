@@ -14,10 +14,25 @@
 }
 
 
+/* Desktop */
+@media (min-width: 1440px){
+}
+
+/* Tablet */
+@media (max-width: 1439px) and (min-width: 768px) {
+        
+}
 
 /* Mobile */
 @media (max-width: 767px) {
-  .Essencial {
+    .Essencial{
+        & .img-04{
+            width: 160%;
+            margin-left: -30%;
+        }
+    }
+
+    .Essencial {
     & .img-01{
         margin-top: 0px;
     }
