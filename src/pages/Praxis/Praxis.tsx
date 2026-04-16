@@ -2,6 +2,7 @@ import './Praxis.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import ProjectText from '../../components/ProjectText/ProjectText'
+import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
 import MotionImage from '../../components/MotionImage/MotionImage'
@@ -44,16 +45,15 @@ function Praxis() {
             onlyMobile
           />
 
-{/*           <img className='img-project heigh no-mobile' src="/portfolio/project/Praxis/bilder/06.png" alt="mockup" />
-          <img className='img-project only-mobile' src="/portfolio/project/Praxis/bilder/07.png" alt="mockup" /> */}
-
           <ProjectText
-            textTitel='Lorem ipsum dolor'
+            textTitel='Fürsorge und Kommunikation'
             textSubtitel='Logo'
             textParagraph={<>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rerum hic veritatis fuga saepe doloremque dolores tempora, quo nulla provident nemo aperiam excepturi temporibus perferendis aliquid numquam. Impedit, necessitatibus similique.
+            Das Logo wurde mit dem Fokus auf zwei Symbole entwickelt, die im Alltag der Pflege nicht voneinander zu trennen sind: Gesundheit und Kommunikation.
             <br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel ut unde iste harum enim cumque est, voluptatibus, aliquid, nostrum voluptates! Eveniet sunt sapiente, necessitatibus omnis libero optio recusandae odio!
+            Das Kreuz wächst direkt aus der Sprechblase heraus, als wären beide schon immer zusammengehört. Das Plus bedeutet in diesem Kontext mehr als es zeigt: Es steht für das Mehr, das diese App ins Team bringen soll: mehr Austausch, mehr Flexibilität, und mehr Verbindung.
+            <br /><br />
+            Für Menschen, die im Alltag keine Zeit verlieren dürfen, aber trotzdem nicht allein arbeiten wollen.
             </>}
           />
 
@@ -61,12 +61,12 @@ function Praxis() {
           <img className='img-project img-03 only-mobile' src="/portfolio/project/Praxis/bilder/02.png" alt="Visual Design" />
 
           <ProjectText
-            textTitel='Lorem ipsum dolor'
+            textTitel='Verlässich und modern'
             textSubtitel='Farbwelt'
             textParagraph={<>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet dolore nemo deleniti tempora nulla expedita sunt magni deserunt eius! Similique adipisci quisquam quam, dolore ullam voluptatibus dolor. Omnis, eos?
+            Für die Farbwahl habe ich mich für Blautöne entschieden, da sie Seriosität und Verlässlichkeit vermitteln, und immerhin modern wirkt.
             <br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis similique neque voluptate consequuntur maxime, veniam praesentium minus qui. Id quisquam rem, expedita asperiores quaerat voluptates architecto nihil officia nemo natus!
+            Es schafft eine ruhige Atmosphäre, die das Wohlbefinden in den Vordergrund stellt und genau das spiegelt wider, wofür diese App steht: ein Team, das füreinander da ist.
             </>}
           />
 
@@ -83,18 +83,327 @@ function Praxis() {
           </div>
 
           <ProjectText
-            textTheme='Lorem ipsum dolor'
+            textTheme='Registrieren und Anmelden'
             textParagraph={<>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi nisi eos similique obcaecati qui ratione placeat hic fuga ipsa totam, at natus explicabo ipsam impedit aliquid veritatis perferendis neque.
+            Die Login-Komponente vereint beide Authentifizierungsflüsse (Registrierung und Anmeldung) in einer einzigen Ansicht.
             <br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non ullam dolorum sequi aut facilis! Nam, fugiat! Officiis voluptatum nesciunt aliquam magni sed asperiores, pariatur tempora veniam facilis ducimus repellat.
+            Der Wechsel zwischen den Modi erfolgt über useState, dass steuert, welches Formular angezeigt wird, welcher Button erscheint und welche Felder sichtbar sind.
+            <br /><br />
+            Das Username-Feld wird ausschließlich bei der Registrierung eingeblendet.
+            Beim Absenden prüft der Handler den aktiven Modus und ruft die entsprechende Firebase-Funktion auf, signup oder login, und übergibt die eingegebenen Zugangsdaten. Der Wechsel zwischen den Modi geschieht über anklickbare Links am unteren Ende des Formulars, ohne Seitenneuladen oder Weiterleitung.
             </>}
+          />
+
+          <ProjectCode
+            lines={[
+              {
+                content: <><span className="code-red">const</span> <span className="code-rosa">onSubmitHandler</span> = (event) =&gt; {'{'}</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <>event.<span className="code-rosa">preventDefault</span>();</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <><span className="code-red">if</span> (currState === <span className="code-blue">"Registrieren"</span>) {'{'}</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-rosa">signup</span>(<span className="code-purple">username</span>, <span className="code-purple">email</span>, <span className="code-purple">password</span>)</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <>{'}'} <span className="code-red">else</span> {'{'}</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-rosa">login</span>(<span className="code-purple">email</span>, <span className="code-purple">password</span>)</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <>{'}'}</>
+              },
+              {
+                content: <>{'}'}</>
+              },
+              {
+                content: <>{''}</>
+              },
+              {
+                content: <>&lt;<span className="code-rosa">span</span> <span className="code-purple">onClick</span>=() =&gt; <span className="code-rosa">setCurrState</span>(<span className="code-blue">"Anmelden"</span>)&gt;</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <>Hier anmelden</>
+              },
+              {
+                content: <>&lt;/<span className="code-rosa">span</span>&gt;</>
+              },
+            ]}
           />
 
           <div className="img-mobile">
             <img src="/portfolio/project/Praxis/bilder/09.png" alt="bild" />
             <img src="/portfolio/project/Praxis/bilder/10.png" alt="bild" />
           </div>
+
+          <ProjectText
+            textTheme='Profil bearbeiten'
+            textParagraph={<>
+            Die ProfileUpdate-Komponente lädt über onAuthStateChanged die aktuellen Nutzerdaten aus Firestore und befüllt damit die Felder für Name, Bio und Profilbild. So sieht der Nutzer immer seinen aktuellen Stand.
+            <br /><br />
+            Beim Speichern prüft der Handler, ob ein neues Bild ausgewählt wurde. Falls ja, wird es zuerst hochgeladen und die zurückgegebene URL zusammen mit Name und Bio in Firestore geschrieben. Falls kein neues Bild vorhanden ist, werden nur die Textfelder aktualisiert. Anschließend wird der globale userData-State über den AppContext synchronisiert, damit Änderungen sofort in der gesamten App sichtbar sind.
+            </>}
+          />
+
+          <ProjectCode
+            lines={[
+              {
+                content: <><span className="code-gray">const</span> <span className="code-rosa">updateProfile</span> = <span className="code-gray">async</span> (event) =&gt; {'{'}</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <>event.<span className="code-rosa">preventDefault</span>();</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <><span className="code-red">if</span> (<span className="code-blue">image</span>) {'{'}</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-blue">const</span> <span className="code-purple">imgUrl</span> = <span className="code-red">await</span> <span className="code-rosa">upload</span>(<span className="code-blue">image</span>);</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-rosa">setPrevImage</span>(<span className="code-purple">imgUrl</span>);</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-red">await</span> <span className="code-rosa">updateDoc</span>(docRef, {'{'}</>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <><span className="code-purple">avatar</span>: <span className="code-blue">imgUrl</span>,</>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <><span className="code-purple">bio</span>: <span className="code-blue">bio</span>,</>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <><span className="code-purple">name</span>: <span className="code-blue">name</span></>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <>{'}'})</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <>{'}'} <span className="code-red">else</span> {'{'}</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-red">await</span> <span className="code-rosa">updateDoc</span>(docRef, {'{'}</>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <><span className="code-purple">bio</span>: <span className="code-blue">bio</span>,</>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <><span className="code-purple">name</span>: <span className="code-blue">name</span></>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <>{'}'})</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <>{'}'}</>
+              },
+              {
+                content: <>{'}'}</>
+              },
+            ]}
+          />
+
+          <div className="img-mobile">
+            <img src="/portfolio/project/Praxis/bilder/12.png" alt="bild" />
+          </div>
+
+          <ProjectText
+            textTheme='Kontakte und Chats'
+            textParagraph={<>
+            Die LeftSidebar-Komponente zeigt entweder die Suchergebnisse oder die bestehenden Chats. Je nachdem, ob der Nutzer gerade etwas im Suchfeld eingibt.
+            <br /><br />
+            Die Suche läuft direkt gegen Firestore auf dem name-Feld. Bereits vorhandene Kontakte und der eigene Account werden dabei automatisch herausgefiltert. Ein neuer Chat wird mit addChat angelegt, wobei für beide Seiten ein Eintrag in der chats-Collection erstellt wird.
+            <br /><br />
+            Beim Öffnen eines bestehenden Chats markiert setChat die Nachrichten als gelesen und navigiert auf Mobilgeräten automatisch zur ChatBox-Ansicht.
+            </>}
+          />
+
+          <ProjectCode
+            lines={[
+              {
+                content: <><span className="code-red">const</span> <span className="code-rosa">addChat</span> = () =&gt; {'{'}</>
+              },
+              {
+                gap:1,
+                indent: 1,
+                content: <><span className="code-red">const</span> <span className="code-purple">messagesRef</span> = <span className="code-rosa">collection</span>(db, <span className="code-blue">"messages"</span>);</>
+              },
+              {
+                gap:1,
+                indent: 1,
+                content: <><span className="code-red">const</span> <span className="code-purple">chatsRef</span> = <span className="code-rosa">collection</span>(db, <span className="code-blue">"chats"</span>);</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <><span className="code-red">const</span> <span className="code-purple">newMessageRef</span> = <span className="code-rosa">doc</span>(<span className="code-purple">messagesRef</span>);</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <><span className="code-rosa">setDoc</span>(<span className="code-purple">newMessageRef</span>, {'{'}</>
+              },
+              {
+                gap:2,
+                indent: 2,
+                content: <><span className="code-purple">createAt</span>: <span className="code-rosa">serverTimestamp</span>(),</>
+              },
+              {
+                gap:2,
+                indent: 2,
+                content: <><span className="code-purple">messagesRef</span>: []</>
+              },
+              {
+                gap:1,
+                indent: 1,
+                content: <>{'}'})</>
+              },
+              {
+                content: <>{'}'}</>
+              },
+            ]}
+          />
+
+          <div className="img-mobile">
+            <img src="/portfolio/project/Praxis/bilder/13.png" alt="bild" />
+          </div>
+
+          <ProjectText
+            textTheme='Chatbox'
+            textParagraph={<>
+            Die ChatBox-Komponente ist das Herzstück der App. Über onSnapshot hört sie in Echtzeit auf neue Nachrichten in Firestore. Sobald eine neue Nachricht eintrifft, wird die Anzeige automatisch aktualisiert, ohne Seitenneuladen.
+            <br /><br />
+            Beim Senden einer Textnachricht wird der Inhalt direkt in das messages-Dokument geschrieben. Gleichzeitig wird für beide Gesprächspartner die lastMessage in der chats-Collection aktualisiert und die Nachricht beim Empfänger als ungelesen markiert.
+            <br /><br />
+            Bilder durchlaufen denselben Ablauf. Sie werden zuerst hochgeladen und die zurückgegebene URL dann als Nachricht gespeichert. 
+            </>}
+          />
+
+          <ProjectCode
+            lines={[
+              {
+                content: <><span className="code-red">const</span> <span className="code-rosa">sendMessage</span> = <span className="code-red">async</span> () =&gt; {'{'}</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <><span className="code-red">if</span> (<span className="code-blue">input && messagesId</span>) {'{'}</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-red">await</span> <span className="code-rosa">updateDoc</span>(<span className="code-rosa">doc</span>(db, <span className="code-purple">"messages"</span>, <span className="code-blue">messagesId</span>), {'{'}</>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <><span className="code-purple">messages</span>: <span className="code-rosa">arrayUnion</span>({'{'}</>
+              },
+              {
+                gap: 4,
+                indent: 4,
+                content: <><span className="code-purple">sId</span>: <span className="code-red">userData</span>.<span className="code-blue">id</span>,</>
+              },
+              {
+                gap: 4,
+                indent: 4,
+                content: <><span className="code-purple">text</span>: <span className="code-purple">input</span>,</>
+              },
+              {
+                gap: 4,
+                indent: 4,
+                content: <><span className="code-purple">createdAt</span>: <span className="code-red">new</span> <span className="code-rosa">Date</span><span className="code-blue">()</span></>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <>{'}'})</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <>{'}'})</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-red">const</span> <span className="code-purple">userIDs</span> = [<span className="code-red">chatUser</span>.<span className="code-blue">rId</span>, <span className="code-red">userData</span>.<span className="code-blue">id</span>];</>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <><span className="code-purple">userIDs</span>.<span className="code-rosa">forEach</span>(<span className="code-red">async</span> (<span className="code-blue">id</span>) =&gt; {'{'}</>
+              },
+              {
+                gap: 3,
+                indent: 3,
+                content: <><span className="code-gray">...</span></>
+              },
+              {
+                gap: 2,
+                indent: 2,
+                content: <>{'}'});</>
+              },
+              {gap: 1,
+                indent: 1,
+                content: <>{'}'}</>
+              },
+              {
+                gap: 1,
+                indent: 1,
+                content: <><span className="code-rosa">setInput</span>(<span className="code-blue">""</span>);</>
+              },
+              {
+                content: <>{'}'}</>
+              },
+            ]}
+          />
 
           <img className='img-project padding' src="/portfolio/project/Praxis/bilder/11.png" alt="bild" />
 

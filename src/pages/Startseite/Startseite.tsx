@@ -67,10 +67,6 @@ function Startseite() {
                         <a className="lebenslauf" href="/portfolio/#/cv" target="_blank" rel="noreferrer">
                         Lebenslauf
                         </a>
-                        <button className="portfolio-download">
-                            Portfolio PDF
-                            <img src="/portfolio/svg/download.svg" alt="" />
-                        </button>
                     </div>
                 </article>
 
