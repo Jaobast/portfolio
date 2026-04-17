@@ -94,16 +94,16 @@ function Startseite() {
                 />
 
                 <ProjectCard
+                    name='Targobank'
+                    img='/portfolio/project/Targobank/card.jpg'
+                    number='04'
+                />
+
+                <ProjectCard
                     name='Praxis Lounge'
                     nameLink='Praxis'
                     img='/portfolio/project/Praxis/card.jpg'
                     number='05'
-                />
-
-                <ProjectCard
-                    name='Dabei'
-                    img='/portfolio/project/Dabei/card.jpg'
-                    number='04'
                 />
 
             </section>

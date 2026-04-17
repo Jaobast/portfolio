@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import './NextProject.css'
 
-const projects = ['MyMixx', 'Caflex', 'Essencial', 'Praxis', 'Dabei']
+const projects = ['MyMixx', 'Caflex', 'Essencial', 'Praxis', 'Targobank']
 
 type NextProjectProps = {
     thisProject: string,
