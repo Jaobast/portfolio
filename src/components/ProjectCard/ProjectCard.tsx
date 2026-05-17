@@ -1,15 +1,17 @@
 import * as motion from "motion/react-client"
 import { useNavigate } from "react-router-dom";
 import './ProjectCard.css'
+import { useLang } from '../../hooks/LangContext'
 
 type cardProps= {
     img: string,
     nameLink?: string,
     name: string,
-    number: string,
+    tag: string,
 }
 
-function ProjectCard({img, name, nameLink, number}: cardProps) {
+function ProjectCard({img, name, nameLink, tag}: cardProps) {
+    const { lang } = useLang()
 
     const navigate = useNavigate();
 
@@ -43,11 +45,13 @@ function ProjectCard({img, name, nameLink, number}: cardProps) {
                 amount: "some",
                 }}
             />
-            <button className="bttn">Projekt anschauen</button>
+            <button className="bttn">
+                {lang === "de" ? "Projekt anschauen" : "View Project"}
+            </button>
         </div>
         <div className="name-container text-block">
             <p className="name">{name}</p>
-            <p className="number">{number}</p>
+            <p className="tag">{tag}</p>
 
         </div>
     </div>

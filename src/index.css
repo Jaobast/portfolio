@@ -128,3 +128,7 @@ h1{font-weight: 700;}
   border: 1px solid var(--grey);
   display: block;
 }
+
+.hidden {
+  display: none;
+}

@@ -1,7 +1,7 @@
 import './Caflex.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
-import ProjectText from '../../components/ProjectText/ProjectText'
+import {ProjectText, ProjectTextEn} from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
@@ -19,11 +19,18 @@ function Caflex() {
           logo='/portfolio/project/Caflex/logo.svg'
           img='/portfolio/project/Caflex/cover.jpg'
           description={<>
-          Wo gibt's den besten Kaffee in der Stadt?
-          <br /><br />
-          Caflex ist eine App, die dir hilft, die besten Cafés in deiner Stadt zu entdecken. Von gemütlichen Eckcafés bis hin zu modernen Specialty-Coffee-Shops.
-          <br /><br />
-          Zu meinen Aufgaben gehörten die Gestaltung der visuellen Identität sowie die Konzeption und Entwicklung der App.
+            Wo gibt's den besten Kaffee in der Stadt?
+            <br /><br />
+            Caflex ist eine App, die dir hilft, die besten Cafés in deiner Stadt zu entdecken. Von gemütlichen Eckcafés bis hin zu modernen Specialty-Coffee-Shops.
+            <br /><br />
+            Zu meinen Aufgaben gehörten die Gestaltung der visuellen Identität sowie die Konzeption und Entwicklung der App.
+          </>}
+          descriptionEn={<>
+            Where's the best coffee in town?
+            <br /><br />
+            Caflex is an app that helps you discover the best cafés in your city. From cozy neighborhood spots to modern specialty coffee shops.
+            <br /><br />
+            My responsibilities included designing the visual identity as well as conceptualizing and developing the app.
           </>}
           tools={[
               { key: 'icon-react', label: 'React'},
@@ -53,12 +60,22 @@ function Caflex() {
           />
 
           <ProjectText
-            textTitel='Bunt. Vielfältig. Möglich'
+            textTitel='Ruhig. Fokussiert. Einladend.'
             textSubtitel='Design'
             textParagraph={<>
-            Für das Design habe ich eine bunte und vielfältige Bildsprache entwickelt, die die zahlreichen Mix-Möglichkeiten widerspiegelt.
+            Für das Design habe ich eine zurückhaltende und bewusste Bildsprache entwickelt, die das Wesen der App widerspiegelt. Die besten Cafés der Stadt zu entdecken.
             <br /><br />
-            Die lebendige Farbwelt betont die Pluralität der Zutaten und vermittelt visuell dieselbe Vielfalt und Freiheit, die auch die Marke selbst verkörpert.
+            Die Farbpalette greift warme Kaffeetöne auf, vertraut und geerdet, kontrastiert durch Akzente in Blau, die Frische und Klarheit bringen. Diese Kombination schafft eine visuelle Balance zwischen Gemütlichkeit und Orientierung.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTitel='Sober. Focused. Inviting.'
+            textSubtitel='Design'
+            textParagraph={<>
+            For the design, I developed a restrained and intentional visual language that reflects the essence of the app. Discovering great coffee in the city.
+            <br /><br />
+            The color palette draws from warm coffee tones, grounded and familiar, contrasted by touches of blue that bring freshness and clarity. This combination creates a visual balance between coziness and orientation.
             </>}
           />
 
@@ -68,6 +85,11 @@ function Caflex() {
           <ProjectText
             textTitel='Components'
             textSubtitel='Funktionalität'
+          />
+
+          <ProjectTextEn
+            textTitel='Components'
+            textSubtitel='Funktionality'
           />
 
           <div className="img-mobile">
@@ -82,6 +104,17 @@ function Caflex() {
             Da das Projekt noch früh in der Entwicklung ist, sind aktuell nur Düsseldorf und Köln verfügbar. Die Café-Daten werden je nach aktiver Stadt aus einem typisierten Objekt geladen, die andere Stadt wird automatisch berechnet und separat angezeigt.
             <br /><br />
             Die zufälligen Empfehlungen werden mit useMemo nur neu berechnet, wenn sich die Stadt ändert.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='City Selection'
+            textParagraph={<>
+            The city selection is managed via useState, with the chosen city persisted in localStorage so it remains intact after a page reload. A second boolean state controls the selection menu, whose visibility is handled through a dynamic CSS class.
+            <br /><br />
+            Since the project is still in early development, only Düsseldorf and Cologne are currently available. The café data is loaded from a typed object based on the active city, while the other city is automatically derived and displayed separately.
+            <br /><br />
+            The random recommendations are recalculated with useMemo only when the city changes.
             </>}
           />
 
@@ -109,6 +142,15 @@ function Caflex() {
             Die Café-Cards sind wiederverwendbare React-Komponenten wie “CafeCard”, “CafeCardLarge” und “CafeCardSmall”, die ihre Daten über Props empfangen. Per .map() wird das Array iteriert und die Eigenschaften jedes Cafés direkt an die Komponente übergeben.
             <br /><br />
             Diese Struktur macht das Projekt leicht skalierbar: Die Daten liegen aktuell in einem typisierten JSON-Objekt, könnten aber problemlos durch einen API-Call ersetzt werden, ohne die Komponentenstruktur anzupassen.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='Sorting Cafés'
+            textParagraph={<>
+            The café cards are reusable React components such as "CafeCard", "CafeCardLarge", and "CafeCardSmall", which receive their data via props. The array is iterated using .map(), passing each café's properties directly to the component.
+            <br /><br />
+            This structure makes the project easily scalable: the data currently lives in a typed JSON object, but could seamlessly be replaced by an API call without modifying the component structure.
             </>}
           />
 
@@ -167,6 +209,16 @@ function Caflex() {
             Jedes Produkt wird mit Name und Einzelpreis angezeigt und kann direkt über den X-Button entfernt werden.
             <br /><br />
             Ein Klick auf den X-Button setzt den booleschen useState isAdded des entsprechenden Produkts auf false zurück. Dadurch verschwindet das Produkt aus der My-Mixx-Liste und der Button im Produktcard wechselt wieder von „Entfernen" zurück zu „Hinzufügen". Der Gesamtpreis wird dabei automatisch neu berechnet und sofort aktualisiert.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='Shopping Cart "My Mixx"'
+            textParagraph={<>
+            The My Mixx screen displays in real time all products added by the user, organized by category: base, fruits, sweeteners, and nuts. Along with the total price. <br />
+            Each product is shown with its name and individual price, and can be removed directly via the X button.
+            <br /><br />
+            Clicking the X button resets the boolean useState isAdded of the corresponding product to false. This removes the product from the My Mixx list and switches the button in the product card back from "Remove" to "Add". The total price is automatically recalculated and updated instantly.
             </>}
           />
 

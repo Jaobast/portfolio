@@ -1,7 +1,7 @@
 import './MyMixx.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
-import ProjectText from '../../components/ProjectText/ProjectText'
+import {ProjectText, ProjectTextEn} from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
@@ -22,6 +22,11 @@ function MyMixx() {
             Mymixx ist ein Müsli-Store, in dem sich jeder sein persönliches Müsli zusammenstellen kann. Von der Basis bis zu den Toppings.
             <br /><br />
             Zu meinen Aufgaben gehörte die Erweiterung der visuellen Identität, die digitale Umsetzung des Brandings sowie die Gestaltung und Programmierung des Bestellsystems.
+            </>}
+            descriptionEn={<>
+            Mymixx is a muesli store where anyone can create their own personal muesli. From the base to the toppings.
+            <br /><br />
+            My responsibilities included expanding the visual identity, implementing the branding digitally, and designing and developing the ordering system.
             </>}
             tools={[
               { key: 'icon-react', label: 'React'},
@@ -60,6 +65,16 @@ function MyMixx() {
             </>}
           />
 
+          <ProjectTextEn
+            textTitel='Colorful. Diverse. Possible.'
+            textSubtitel='Design'
+            textParagraph={<>
+            For the design, I developed a vibrant and diverse visual language that reflects the countless mixing possibilities.
+            <br /><br />
+            The lively color palette emphasizes the variety of ingredients and visually conveys the same diversity and freedom that the brand itself embodies.
+            </>}
+          />
+
           <img className='img-project padding no-mobile' src="/portfolio/project/MyMixx/bilder/05.png" alt="bild" />
           <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.png" alt="bild" />
 
@@ -74,6 +89,11 @@ function MyMixx() {
             textSubtitel='Funktionalität'
           />
 
+          <ProjectTextEn
+            textTitel='Components'
+            textSubtitel='Functionality'
+          />
+
           <div className="img-mobile">
             <img src="/portfolio/project/MyMixx/bilder/10.png" alt="bild" />
             <img src="/portfolio/project/MyMixx/bilder/11.png" alt="bild" />
@@ -85,6 +105,15 @@ function MyMixx() {
             Jedes Produktcard verwaltet seinen Zustand über useState, das einen booleschen Wert isAdded speichert. Abhängig davon wechselt das Card zwischen zwei visuellen Zuständen: weißer Hintergrund mit „Hinzufügen"-Button oder farbiger Hintergrund mit „Entfernen"-Button. Das Styling wird dabei nicht per direktem DOM-Zugriff geändert, sondern durch dynamisches Setzen von CSS-Klassen basierend auf dem State.
             <br /><br />
             Ein Klick auf den Button triggert eine Funktion, die isAdded togglet und gleichzeitig das Produkt im globalen My Mixx-State hinzufügt oder entfernt. Dieser globale State verwaltet über useContext oder ein State-Management wie Redux stellt sicher, dass die Produktauswahl komponentenübergreifend konsistent bleibt.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='"Add" / "Remove" Button'
+            textParagraph={<>
+            Each product card manages its state via useState, storing a boolean value isAdded. Depending on this, the card switches between two visual states: a white background with an "Add" button, or a colored background with a "Remove" button. The styling is not changed through direct DOM manipulation, but by dynamically applying CSS classes based on the state.
+            <br /><br />
+            Clicking the button triggers a function that toggles isAdded while simultaneously adding or removing the product from the global My Mixx state. This global state, managed via useContext or a state management solution like Redux, ensures that the product selection remains consistent across components.
             </>}
           />
 
@@ -161,6 +190,16 @@ function MyMixx() {
             Jedes Produkt wird mit Name und Einzelpreis angezeigt und kann direkt über den X-Button entfernt werden.
             <br /><br />
             Ein Klick auf den X-Button setzt den booleschen useState isAdded des entsprechenden Produkts auf false zurück. Dadurch verschwindet das Produkt aus der My-Mixx-Liste und der Button im Produktcard wechselt wieder von „Entfernen" zurück zu „Hinzufügen". Der Gesamtpreis wird dabei automatisch neu berechnet und sofort aktualisiert.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='Shopping Cart "My Mixx"'
+            textParagraph={<>
+            The My Mixx screen displays in real time all products added by the user, organized by category: base, fruits, sweeteners, and nuts. Along with the total price.<br />
+            Each product is shown with its name and individual price, and can be removed directly via the X button.
+            <br /><br />
+            Clicking the X button resets the boolean useState isAdded of the corresponding product to false. This removes the product from the My Mixx list and switches the button in the product card back from "Remove" to "Add". The total price is automatically recalculated and updated instantly.
             </>}
           />
 
@@ -252,11 +291,27 @@ function MyMixx() {
             </>}
           />
 
+          <ProjectTextEn
+            textTheme='Using JSON to Sort Products'
+            textParagraph={<>
+            The focus was on clearly structuring the product data and dynamically generating the UI elements.
+            <br /><br />
+            To organize the products, I created a JavaScript file containing an array of objects with all relevant information (name, price, quantity, and image). This simplifies both maintenance and rendering on the frontend.
+            </>}
+          />
+
 
           <ProjectText
             textParagraph={<>
             Die Struktur in dem Jason Datei wird in Objects kategorisiert.<br />
             Anbei ist ein Beispiel, wie die Früchtensorte sortiert wird:
+            </>}
+          />
+
+          <ProjectTextEn
+            textParagraph={<>
+            The structure in the JSON file is organized into objects.<br />
+            Below is an example of how the fruit category is sorted:
             </>}
           />
 
@@ -294,6 +349,12 @@ function MyMixx() {
           <ProjectText
             textParagraph={<>
             Und die Nutzung ist ebenso einfach.
+            </>}
+          />
+
+          <ProjectTextEn
+            textParagraph={<>
+            And the usage is just as simple.
             </>}
           />
 

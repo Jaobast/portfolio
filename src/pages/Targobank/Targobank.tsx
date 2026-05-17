@@ -18,6 +18,9 @@ function Targobank() {
             description={<>
             Projekt in Bearbeitung...
             </>}
+            descriptionEn={<>
+            Project in progress...
+            </>}
           />
 
           <NextProject thisProject='Targobank'/>

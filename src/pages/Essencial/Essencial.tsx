@@ -1,7 +1,7 @@
 import './Essencial.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
-import ProjectText from '../../components/ProjectText/ProjectText'
+import {ProjectText, ProjectTextEn} from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
@@ -19,9 +19,14 @@ function Essencial() {
             logo='/portfolio/project/Essencial/logo.svg'
             video='/portfolio/project/Essencial/cover.mp4'
             description={<>
-            Essencial ist ein Massage-Salon, der Ruhe und Wohlbefinden in den Mittelpunkt stellt. Die visuelle Identität und die Website wurden von mir entwickelt.
-            <br /><br />
-            Auf der Website werden die Professionalität und Philosophie der Therapeutin hervorgehoben sowie die verschiedenen Angebote übersichtlich präsentiert.
+              Essencial ist ein Massage-Salon, der Ruhe und Wohlbefinden in den Mittelpunkt stellt. Die visuelle Identität und die Website wurden von mir entwickelt.
+              <br /><br />
+              Auf der Website werden die Professionalität und Philosophie der Therapeutin hervorgehoben sowie die verschiedenen Angebote übersichtlich präsentiert.
+            </>}
+            descriptionEn={<>
+              Essencial is a massage salon focused on calm and well-being. I developed both the visual identity and the website.
+              <br /><br />
+              The website highlights the therapist's professionalism and philosophy, while presenting the various services in a clear and accessible way.
             </>}
             tools={[
                 { key: 'icon-react', label: 'React'},
@@ -50,6 +55,16 @@ function Essencial() {
             </>}
           />
 
+          <ProjectTextEn
+            textTitel='Connection and Trust'
+            textSubtitel='Logo'
+            textParagraph={<>
+            The logo was developed with a visual language that makes connection and trust tangible. The client wanted a mark that captures the essence of touch without saying too much.
+            <br /><br />
+            Through the reduced linework of two hands embedded in a stylized semicircle, a calm, almost meditative image emerges. One that captures the character of the salon perfectly.
+            </>}
+          />
+
           <img className='img-project img-01' src="/portfolio/project/Essencial/bilder/04.png" alt="bild" />
 
           <ProjectText
@@ -59,6 +74,16 @@ function Essencial() {
             Für das Design habe ich eine Farbwelt entwickelt, die Ruhe und Stärke ausstrahlt.
             <br /><br />
             Die Kundin wünschte sich einen minimalen Bezug zur brasilianischen Flagge und zur Herkunft der Massage. Durch die reduzierte und ausgewogene Farbpalette entsteht ein entspannter, chilliger Ton, der perfekt zum Salon passt.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTitel='Calm. Strong. Harmonious'
+            textSubtitel='Color Palette'
+            textParagraph={<>
+            For the design, I developed a color palette that radiates calm and strength.
+            <br /><br />
+            The client wanted a subtle reference to the Brazilian flag and the origins of the massage. Through the restrained and balanced color palette, a relaxed, laid-back tone emerges. One that fits the salon perfectly.
             </>}
           />
 
@@ -77,6 +102,18 @@ function Essencial() {
             Die MassageType-Komponente nimmt Daten über Props entgegen (Name, Beschreibung, Bild und Preisstufen) und rendert diese dynamisch. Neue Angebote oder Massagearten lassen sich dadurch einfach durch das Hinzufügen eines neuen Datensatzes einpflegen, ohne den bestehenden Code zu verändern.
             <br /><br />
             Änderungen an der Komponente selbst wirken sich automatisch auf alle Instanzen aus konsistent und wartungsfreundlich.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTitel='React und Components'
+            textSubtitel='Front-end'
+            textParagraph={<>
+            Using React and a component-based architecture, the website is built in a modular and scalable way.
+            <br /><br />
+            The MassageType component receives data via props (name, description, image, and price tiers) and renders it dynamically. New services or massage types can be added simply by inserting a new data entry. Without touching the existing code.
+            <br /><br />
+            Changes to the component itself automatically apply to all instances. Consistent and easy to maintain.
             </>}
           />
 
@@ -189,6 +226,12 @@ function Essencial() {
           <ProjectText
             textParagraph={<>
             Änderungen an der Komponente selbst wirken sich automatisch auf alle Instanzen aus konsistent und wartungsfreundlich.
+            </>}
+          />
+
+          <ProjectTextEn
+            textParagraph={<>
+            Changes to the component itself automatically apply to all instances. Consistent and easy to maintain.
             </>}
           />
 

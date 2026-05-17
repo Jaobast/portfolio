@@ -1,13 +1,12 @@
 .Startseite header{
     position: absolute;
     top: 0; left: 0;
-    z-index: 2;
 
     padding: var(--padding);
 
     display: flex; flex-direction: column;
     gap: 50px;
-    background-color: white;
+    /* background-color: white; */
 
     & video{
         width: 100%;
@@ -15,11 +14,13 @@
         border-radius: var(--border);
         min-height: 0;
         flex: 1;
+        z-index: 2;
     }
 
     & article{
         display: flex; justify-content: space-between;
         gap: var(--gap);
+        z-index: -2;
 
         & h1{
             width: fit-content;

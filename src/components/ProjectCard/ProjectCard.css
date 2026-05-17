@@ -35,7 +35,7 @@
             color: black;
         }
 
-        & .number{
+        & .tag{
             font-size: calc( var(--txt-titel) /1.8);
             color: black;
         }

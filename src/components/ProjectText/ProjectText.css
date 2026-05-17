@@ -20,3 +20,8 @@
         color: black;
     }
 }
+
+.Startseite .ProjectText{
+    padding: 0;
+    & .text-block{ padding: 0;}
+}

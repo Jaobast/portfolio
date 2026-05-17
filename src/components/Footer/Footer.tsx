@@ -1,7 +1,10 @@
 import './Footer.css'
+import { useLang } from '../../hooks/LangContext'
+
 
 
 function Footer() {
+    const { lang } = useLang()
 
 
   return (
@@ -12,7 +15,9 @@ function Footer() {
             <div className="infos-container">
                 <div className="info-column">
                     <div className="info">
-                        <p className='bold'>Aktuaisiert in</p>
+                        <p className='bold'>
+                            {lang === "de" ? "Aktuaisiert in" : "Updated on:"}
+                        </p>
                         <p>2026</p>
                     </div>
                     <a href="https://github.com/Jaobast/portfolio" target="_blank" rel="noopener noreferrer">
@@ -26,12 +31,16 @@ function Footer() {
 
                 <div className="info-column">
                     <div className="info">
-                        <p className='bold'>Für weitere Frage:</p>
+                        <p className='bold'>
+                            {lang === "de" ? "Für weitere Frage:" : "Any questions?"}
+                        </p>
                         <p>joaobasto@outlook.de</p>
                     </div>
 
                     <a href="https://www.linkedin.com/in/joao-bastos-profil/" target="_blank" rel="noopener noreferrer">
-                        <p className='bold'>Lass uns vernetzen</p>
+                        <p className='bold'>
+                            {lang === "de" ? "Lass uns vernetzen:" : "Let's connect"}
+                        </p>
                         <div>
                             <p>LinkedIn</p>
                             <img src="/portfolio/svg/arrow.svg" alt="pfeil icon" />

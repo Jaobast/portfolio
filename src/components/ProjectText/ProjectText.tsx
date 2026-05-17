@@ -1,4 +1,5 @@
 import './ProjectText.css'
+import { useLang } from '../../hooks/LangContext'
 
 type ProjectTextProps = {
     textTitel?: string,
@@ -8,9 +9,10 @@ type ProjectTextProps = {
 }
 
 function ProjectText({textTitel, textSubtitel, textTheme, textParagraph}: ProjectTextProps) {
+    const { lang } = useLang()
 
   return (
-    <div className='ProjectText'>
+    <div className={`ProjectText deutsch ${lang !== "de" ? "hidden" : ""}`}>
         <div className='text-block'>
             {textTitel? (
                 <div className='titel'>
@@ -29,4 +31,26 @@ function ProjectText({textTitel, textSubtitel, textTheme, textParagraph}: Projec
   )
 }
 
-export default ProjectText
+function ProjectTextEn({textTitel, textSubtitel, textTheme, textParagraph}: ProjectTextProps) {
+    const { lang } = useLang()
+  return (
+    <div className={`ProjectText english ${lang !== "en" ? "hidden" : ""}`}>
+      <div className='text-block'>
+        {textTitel? (
+          <div className='titel'>
+            <h3>{textTitel}</h3>
+            <h4>{textSubtitel}</h4>
+          </div>
+        ): ""}
+        {textParagraph?(
+          <div className="text">
+            <p className='text-bold'>{textTheme}</p>
+            <p>{textParagraph}</p>
+          </div>
+        ) : ""}
+      </div>
+    </div>
+  )
+}
+
+export {ProjectText, ProjectTextEn}

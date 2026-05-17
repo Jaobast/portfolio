@@ -25,9 +25,22 @@ nav{
         gap: 15px;
         align-items: end;
     }
+
+    & .lang-mail{
+        display: flex;
+        gap: 50px;
+    }
+
+    & div.only-mobile{
+        height: 2px; width: 70px; opacity: 0;
+    }
+
+    .lang-toggle{
+        width: 70px;
+    }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-  nav{ justify-content: center;}
+
 }

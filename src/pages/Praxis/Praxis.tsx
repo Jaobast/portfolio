@@ -1,7 +1,7 @@
 import './Praxis.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
-import ProjectText from '../../components/ProjectText/ProjectText'
+import {ProjectText, ProjectTextEn} from '../../components/ProjectText/ProjectText'
 import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
@@ -22,6 +22,11 @@ function Praxis() {
               Praxis Lounge ist eine mobile-first Chat-App für den Krankenhausalltag. Sie ermöglicht eine schnelle und klare Kommunikation zwischen Pflegekräften, selbst wenn sie auf verschiedene Stationen verteilt sind.
               <br /><br />
               Die größte Herausforderung liegt im Backend, das eine sichere, stabile und performante Echtzeit-Kommunikation ermöglichen muss.
+              </>}
+              descriptionEn={<>
+              Praxis Lounge is a mobile-first chat app for everyday hospital life. It enables fast and clear communication between nursing staff, even when spread across different wards.
+              <br /><br />
+              The greatest challenge lies in the backend, which must support secure, stable, and high-performance real-time communication.
               </>}
               tools={[
                 { key: 'icon-react', label: 'React'},
@@ -57,6 +62,18 @@ function Praxis() {
             </>}
           />
 
+          <ProjectTextEn
+            textTitel='Care and Communication'
+            textSubtitel='Logo'
+            textParagraph={<>
+            The logo was developed with a focus on two symbols that are inseparable in everyday nursing: health and communication.
+            <br /><br />
+            The cross grows directly out of the speech bubble, as if the two always belonged together. In this context, the plus sign means more than it shows: it stands for the more that this app should bring to the team. More exchange, more flexibility, and more connection.
+            <br /><br />
+            For people who can't afford to lose time in their daily work, but still don't want to work alone.
+            </>}
+          />
+
           <img className='img-project img-02 no-mobile' src="/portfolio/project/Praxis/bilder/01.png" alt="Visual Design" />
           <img className='img-project img-03 only-mobile' src="/portfolio/project/Praxis/bilder/02.png" alt="Visual Design" />
 
@@ -70,12 +87,27 @@ function Praxis() {
             </>}
           />
 
+          <ProjectTextEn
+            textTitel='Reliable and Modern'
+            textSubtitel='Farbwelt'
+            textParagraph={<>
+            For the color choices, I opted for shades of blue, as they convey professionalism and reliability while still feeling modern.
+            <br /><br />
+            It creates a calm atmosphere that puts well-being first, and that is exactly what this app stands for: a team that is there for each other.
+            </>}
+          />
+
           <img className='img-project padding no-mobile' src="/portfolio/project/Praxis/bilder/04.png" alt="Visual Design" />
           <img className='img-project padding only-mobile' src="/portfolio/project/Praxis/bilder/03.png" alt="Visual Design" />
 
           <ProjectText
             textTitel='Components'
             textSubtitel='Funktionalität'
+          />
+
+          <ProjectTextEn
+            textTitel='Components'
+            textSubtitel='Functionality'
           />
 
           <div className="img-mobile">
@@ -91,6 +123,17 @@ function Praxis() {
             <br /><br />
             Das Username-Feld wird ausschließlich bei der Registrierung eingeblendet.
             Beim Absenden prüft der Handler den aktiven Modus und ruft die entsprechende Firebase-Funktion auf, signup oder login, und übergibt die eingegebenen Zugangsdaten. Der Wechsel zwischen den Modi geschieht über anklickbare Links am unteren Ende des Formulars, ohne Seitenneuladen oder Weiterleitung.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='Register and Sign In'
+            textParagraph={<>
+            The login component combines both authentication flows (registration and sign-in) in a single view.
+            <br /><br />
+            The switch between modes is handled via useState, which controls which form is displayed, which button appears, and which fields are visible.
+            <br /><br />
+            The username field is only shown during registration. When submitting, the handler checks the active mode and calls the corresponding Firebase function, signup or login, passing the entered credentials. Switching between modes happens via clickable links at the bottom of the form, without page reloads or redirects.
             </>}
           />
 
@@ -160,6 +203,15 @@ function Praxis() {
             Die ProfileUpdate-Komponente lädt über onAuthStateChanged die aktuellen Nutzerdaten aus Firestore und befüllt damit die Felder für Name, Bio und Profilbild. So sieht der Nutzer immer seinen aktuellen Stand.
             <br /><br />
             Beim Speichern prüft der Handler, ob ein neues Bild ausgewählt wurde. Falls ja, wird es zuerst hochgeladen und die zurückgegebene URL zusammen mit Name und Bio in Firestore geschrieben. Falls kein neues Bild vorhanden ist, werden nur die Textfelder aktualisiert. Anschließend wird der globale userData-State über den AppContext synchronisiert, damit Änderungen sofort in der gesamten App sichtbar sind.
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='Edit Profile'
+            textParagraph={<>
+            The ProfileUpdate component loads the current user data from Firestore via onAuthStateChanged and populates the fields for name, bio, and profile picture. So the user always sees their current information.
+            <br /><br />
+            When saving, the handler checks whether a new image has been selected. If so, it is uploaded first and the returned URL is written to Firestore along with the name and bio. If no new image is present, only the text fields are updated. Afterwards, the global userData state is synced via AppContext, so changes are immediately reflected throughout the entire app.
             </>}
           />
 
@@ -264,6 +316,17 @@ function Praxis() {
             </>}
           />
 
+          <ProjectTextEn
+            textTheme='Contacts and Chats'
+            textParagraph={<>
+            The LeftSidebar component displays either search results or existing chats, depending on whether the user is currently typing in the search field.
+            <br /><br />
+            The search runs directly against Firestore on the name field. Existing contacts and the user's own account are automatically filtered out. A new chat is created with addChat, generating an entry in the chats collection for both sides.
+            <br /><br />
+            When opening an existing chat, setChat marks the messages as read and automatically navigates to the ChatBox view on mobile devices.
+            </>}
+          />
+
           <ProjectCode
             lines={[
               {
@@ -322,6 +385,17 @@ function Praxis() {
             Beim Senden einer Textnachricht wird der Inhalt direkt in das messages-Dokument geschrieben. Gleichzeitig wird für beide Gesprächspartner die lastMessage in der chats-Collection aktualisiert und die Nachricht beim Empfänger als ungelesen markiert.
             <br /><br />
             Bilder durchlaufen denselben Ablauf. Sie werden zuerst hochgeladen und die zurückgegebene URL dann als Nachricht gespeichert. 
+            </>}
+          />
+
+          <ProjectTextEn
+            textTheme='Chatbox'
+            textParagraph={<>
+            The ChatBox component is the heart of the app. Via onSnapshot, it listens in real time for new messages in Firestore. As soon as a new message arrives, the display is automatically updated. No page reload required.
+            <br /><br />
+            When sending a text message, the content is written directly into the messages document. At the same time, the lastMessage in the chats collection is updated for both participants, and the message is marked as unread for the recipient.
+            <br /><br />
+            Images follow the same flow. They are uploaded first, and the returned URL is then saved as a message.
             </>}
           />
 

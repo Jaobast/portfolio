@@ -1,4 +1,5 @@
 import './ProjectHeader.css'
+import { useLang } from '../../hooks/LangContext'
 import Tools from '../Tools/Tools'
 
 type ProjectHeaderProps = {
@@ -9,13 +10,15 @@ type ProjectHeaderProps = {
     linkWebsite?: string,
     linkGithub?: string,
     description?: React.ReactNode,
+    descriptionEn?: React.ReactNode,
     tools?: {
         key: string
         label: string
     }[]
 }
 
-function ProjectHeader({video, img, logo, name, description, tools, linkWebsite, linkGithub}: ProjectHeaderProps) {
+function ProjectHeader({video, img, logo, name, description, descriptionEn, tools, linkWebsite, linkGithub}: ProjectHeaderProps) {
+    const { lang } = useLang()
 
     return (
         <header className='ProjectHeader'>
@@ -33,13 +36,15 @@ function ProjectHeader({video, img, logo, name, description, tools, linkWebsite,
                 <div className="projectname-container text-block">
                     <div className="projectname">
                         <h1>{name}</h1>
-                        <h2>Briefing</h2>
+                        <h2>Briefing </h2>
                     </div> 
                 </div>
             </section>
 
             <section className='description text-block'>
-                <p className="text">{description}</p>
+                <p className="text">
+                    {lang === "de" ? description : descriptionEn}
+                    </p>
 
                 <Tools tools={tools} />
 
@@ -48,7 +53,7 @@ function ProjectHeader({video, img, logo, name, description, tools, linkWebsite,
                         linkWebsite?
                         <button className='bttn website'>
                             <a href={linkWebsite} target="_blank" rel="noopener noreferrer">
-                                Projekt live sehen
+                                {lang === "de" ? "Projekt live sehen" : "view project live"}
                             </a>
                         </button>
                         : ""
@@ -57,7 +62,7 @@ function ProjectHeader({video, img, logo, name, description, tools, linkWebsite,
                         linkGithub?
                         <button className='bttn github'>
                             <a href={linkGithub} target="_blank" rel="noopener noreferrer">
-                                Code auf Github
+                                Github Code
                             </a>
                         </button>
                         : ""

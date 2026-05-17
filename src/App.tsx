@@ -7,6 +7,8 @@ import Essencial from "./pages/Essencial/Essencial";
 import Targobank from "./pages/Targobank/Targobank";
 import Caflex from "./pages/Caflex/Caflex";
 import Praxis from "./pages/Praxis/Praxis";
+import Conquest from "./pages/Conquest/Conquest";
+import Sprout from "./pages/Sprout/Sprout";
 
 import Cv from "./pages/Cv/Cv";
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/Targobank" element={<Targobank />} />
         <Route path="/Praxis" element={<Praxis />} />
         <Route path="/Caflex" element={<Caflex />} />
+        <Route path="/Conquest" element={<Conquest />} />
+        <Route path="/Sprout" element={<Sprout />} />
         <Route path="/Cv" element={<Cv />} />
       </Routes>
     </HashRouter>
