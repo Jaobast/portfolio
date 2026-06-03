@@ -16,7 +16,14 @@ function Conquest() {
             logo='/portfolio/project/Conquest/logo.svg'
             img='/portfolio/project/Conquest/cover.jpg'
             description={<>
-            Projekt in Bearbeitung...
+            Conquest ist ein mittelalterliches Strategiespiel, in dem der Spieler Provinzen erobert, Ressourcen verwaltet und Armeen durch taktische Schlachten führt.
+            <br/> <br/>
+            Zu meinen Aufgaben gehörten das Game Design, die Entwicklung des visuellen Konzepts sowie die Gestaltung sämtlicher UI-Elemente und Illustrationen.
+            </>}
+            descriptionEn={<>
+            Conquest is a medieval strategy game where the player expands across a province map, manages resources and armies, and resolves conflicts through tactical lane-based battles.
+            <br/> <br/>
+            My responsibilities included the game design, the development of the visual concept, as well as the creation of all UI elements and illustrations.
             </>}
           />
 
