@@ -1,0 +1,50 @@
+.lang-toggle {
+    position: fixed;
+    top: var(--padding);
+    right: calc(var(--padding) + (var(--padding) / 2) + 250px);
+    mix-blend-mode: normal;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 999px;
+    padding: 4px;
+    gap: 2px;
+
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.lang-toggle.faded { opacity: 0.6;}
+
+.lang-option {
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: #1a1a1a;
+  font-size: calc(var(--txt-text) - 4px);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-option.active {
+  background-color: #e03d1a; /* laranja do teu Figma */
+  color: #ffffff;
+}
+
+/* Tablet */
+@media (max-width: 1439px) {
+    .lang-toggle {
+        right: calc(var(--padding) + (var(--padding) / 2) + 200px);
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .lang-toggle {
+        right: calc(var(--padding) + (var(--padding) / 2));
+    }
+}

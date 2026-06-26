@@ -103,19 +103,6 @@ function Startseite() {
             <section className='projects'>
 
                 <ProjectCard
-                    name= 'Conquest'
-                    img='/portfolio/project/Conquest/card.jpg'
-                    tag= 'Game Design'
-                />
-
-                <ProjectCard
-                    name= 'Sprout Run'
-                    nameLink='Sprout'
-                    img='/portfolio/project/Sprout/card.jpg'
-                    tag= 'Game Design'
-                />
-
-                <ProjectCard
                     name='MyMixx'
                     img='/portfolio/project/MyMixx/card.jpg'
                     tag= 'UI-UX Design | Frontend Entwickler'
@@ -144,6 +131,19 @@ function Startseite() {
                     nameLink='Praxis'
                     img='/portfolio/project/Praxis/card.jpg'
                     tag= 'Design | Frontend Entwickler'
+                />
+
+                <ProjectCard
+                    name= 'Conquest'
+                    img='/portfolio/project/Conquest/card.jpg'
+                    tag= 'Game Design'
+                />
+
+                <ProjectCard
+                    name= 'Sprout Run'
+                    nameLink='Sprout'
+                    img='/portfolio/project/Sprout/card.jpg'
+                    tag= 'Game Design'
                 />
 
             </section>

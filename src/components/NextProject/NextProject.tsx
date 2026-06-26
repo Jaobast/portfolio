@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import './NextProject.css'
 import { useLang } from '../../hooks/LangContext'
 
-const projects = ['Conquest', 'Sprout', 'MyMixx', 'Caflex', 'Essencial', 'Praxis', 'Targobank']
+const projects = ['MyMixx', 'Caflex', 'Essencial', 'Praxis', 'Targobank', 'Conquest', 'Sprout']
 
 type NextProjectProps = {
     thisProject: string,
