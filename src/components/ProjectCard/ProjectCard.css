@@ -27,17 +27,18 @@
 
     & .name-container{
         display: flex;
-        justify-content: space-between; align-items: center;
+        flex-direction: column;
+        align-items: start;
 
         & .name{
-            font-size: var(--txt-titel);
+            font-size: var(--txt-h1);
             font-weight: 500;
             color: black;
         }
 
         & .tag{
-            font-size: calc( var(--txt-titel) /1.8);
-            color: black;
+            font-size: var(--txt-body);
+            color: var(--grey);
         }
     }
 
@@ -80,6 +81,11 @@
         --bttn-left: 12px;
         --img-height: fit-content;
         --bttn-txt: 12px;
+    }
+
+    .ProjectCard .name-container{
+        flex-direction: column;
+        align-items: start;
     }
 
     .ProjectCard .name-container .name{

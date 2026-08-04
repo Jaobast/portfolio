@@ -34,7 +34,7 @@ function Footer() {
                         <p className='bold'>
                             {lang === "de" ? "Für weitere Frage:" : "Any questions?"}
                         </p>
-                        <p>joaobasto@outlook.de</p>
+                        <p>joaobastos@outlook.de</p>
                     </div>
 
                     <a href="https://www.linkedin.com/in/joao-bastos-profil/" target="_blank" rel="noopener noreferrer">

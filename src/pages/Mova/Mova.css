@@ -1,0 +1,16 @@
+.Mova{
+    & .logo-pattern{width: 15vw; margin: 0 auto;}
+
+}
+
+/* Desktop */
+@media (min-width: 1440px){
+    .Mova .video01{
+        width: 70%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .Mova{ & .logo-pattern{width: 30vw;}}
+}

@@ -1,31 +1,28 @@
 .Startseite header{
-    position: absolute;
-    top: 0; left: 0;
-
-    padding: var(--padding);
 
     display: flex; flex-direction: column;
     gap: 50px;
-    /* background-color: white; */
 
-    & video{
-        width: 100%;
-        object-fit: cover;
-        border-radius: var(--border);
-        min-height: 0;
-        flex: 1;
-        z-index: 2;
+    & video {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    min-height: 0;
+    flex: 1;
+    display: block;
+    margin: 0 auto;
     }
 
     & article{
         display: flex; justify-content: space-between;
         gap: var(--gap);
-        z-index: -2;
+        padding: 0 calc(1.5 * var(--padding));
 
         & h1{
             width: fit-content;
             white-space: nowrap;
-            font-size: calc(var(--txt-text));
+            font-size: calc(var(--txt-body));
             color: var(--grey);
             font-weight: 300;
 
@@ -45,7 +42,6 @@
 }
 
 .Startseite main{
-    margin-top: 100svh;
     padding: 0 var(--padding);
     width: 100%;
     overflow: hidden;
@@ -56,14 +52,45 @@
     gap: var(--gap);
     padding: calc(4 * var(--padding)) 0 var(--padding);
 
-    min-height: 100svh; width: 100%;
+    height: fit-content; width: 100%;
 
-    & img.pic-me{
-        border-radius: var(--border);
-        min-width: 0;
-        min-height: 0;
-        flex: 1;
+    & div.polaroids {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    flex: 1;
+
+    & img {
+        position: absolute;
+        top: 50%;
+        width: 45%;
+        max-width: 320px;
+        transition: transform 0.3s ease;
     }
+
+    & .pic_01 {
+        left: 67%;
+        z-index: 2;
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    & .pic_02 {
+        left: 52%;
+        top: calc(50% - 100px);
+        z-index: 1;
+        transform: translate(-50%, -50%) rotate(-8deg);
+    }
+    & .pic_03 {
+        left: 37%;
+        z-index: 0;
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+
+    & img:hover {
+        z-index: 3;
+        transform: translate(-50%, -55%) rotate(0deg) scale(1.15);
+    }
+}
 
     & article{
         flex: 1;
@@ -73,12 +100,12 @@
 
         & .tecnologie{
             display: flex; flex-direction: column;
-            gap: 10px;
+            gap: 4px;
 
-            & h2{ line-height: 0.8; color: var(--orange); font-weight: 500;}
+            & h2{ line-height: 0.8; color: var(--orange); font-weight: 500; font-size: calc(var(--txt-body) * 1.7);}
 
-            & ul{ display: flex; gap: var(--gap);}
-            & ul li{ font-size: calc(var(--txt-text) * 1.1);}
+            & ul{ display: flex; justify-content: space-between; max-width: 500px;}
+            & ul li{ font-size: var(--txt-body)}
         }
 
         & .text {
@@ -106,11 +133,11 @@
             }
             & button {
                 background-color: var(--grey); color: white;
-                font-size: calc(var(--txt-text) / 1.2);
+                font-size: calc(var(--txt-body) / 1.2);
             }
             & a{
                 background-color: white; color: var(--grey);
-                font-size: var(--txt-text);
+                font-size: var(--txt-body);
             }
 
             & button img{
@@ -126,22 +153,8 @@
 .Startseite .projects{
     padding-top: 80px;
     display: flex; flex-direction: column;
-    gap: calc(var(--gap) * 1.3);
+    gap: calc(var(--gap) * 2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -159,6 +172,11 @@
         outline: 2px solid var(--orange);
         outline-offset: -2px;
     }
+
+    .Startseite .about div.polaroids img:hover {
+        z-index: 3;
+        transform: translate(-50%, -55%) rotate(0deg) scale(1.15);
+    }
 }
 
 
@@ -174,23 +192,43 @@
 
 /* Mobile */
 @media (max-width: 767px) {
+    
     .Startseite header{
+        height: fit-content;
+        padding-top: 60px;
+
         & article{
             flex-direction: column;
             & h1 span{font-size: 40px;}
             & p{max-width: 450px;}
         }
+
+        & video {
+            flex: none;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+        }
     }
 
     .Startseite .about{
         flex-direction: column-reverse;
+        min-height: fit-content;
 
-        & img.pic-me{
-            flex: none;
-            aspect-ratio: 5/2;
-            margin-bottom: calc(2 * var(--padding));
-            object-position: center 40%;
+        & div.polaroids{
+            height: 40svh;
+            flex: auto;
+
+            & img {
+                top: 55%;
+                height: 60%;
+                width: auto;
+            }
+            & .pic_02 { top: calc(55% - 40px);}
         }
+
+        & .text {
+            & p{ max-width: 500px;}
     }
 
     .Startseite .about article .text .socialmedia img{height: 24px;}
@@ -206,5 +244,9 @@
         border-color: var(--orange);
     }
 
-    .Startseite .projects{ padding-top: 50px}
+    .Startseite .projects{
+        padding-top: 50px;
+        gap: calc(var(--gap) * 1.3);
+    }
+}
 }

@@ -19,21 +19,24 @@ export function LangToggle() {
   }
 
   return (
-    <div
-      className={`lang-toggle ${faded ? "faded" : ""}`}
-    >
-      <button
-        className={`lang-option ${lang === "de" ? "active" : ""}`}
-        onClick={() => handleSelect("de")}
+    <div className="lang-toogle-container">
+      <div
+        className={`lang-toggle ${faded ? "faded" : ""}`}
       >
-        Deutsch
-      </button>
-      <button
-        className={`lang-option ${lang === "en" ? "active" : ""}`}
-        onClick={() => handleSelect("en")}
-      >
-        English
-      </button>
+        <button
+          className={`lang-option ${lang === "de" ? "active" : ""}`}
+          onClick={() => handleSelect("de")}
+        >
+          Deutsch
+        </button>
+        <button
+          className={`lang-option ${lang === "en" ? "active" : ""}`}
+          onClick={() => handleSelect("en")}
+        >
+          English
+        </button>
+      </div>
+
     </div>
   )
 }

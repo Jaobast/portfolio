@@ -2,7 +2,7 @@
 
 .Footer{
     padding: 200px 0 0;
-    width: 100vw;
+    width: 100vw; max-width: 1920px;
 
     display: flex; flex-direction: column;
 
@@ -16,7 +16,7 @@
         display: flex; justify-content: space-between;
         padding: 0 calc(var(--padding) + (var(--padding) / 2));
 
-        & .titel{ font-size: var(--txt-titel); color: black;}
+        & .titel{ font-size: var(--txt-h1); color: black;}
 
         & .infos-container{
             display: flex; gap: calc(var(--gap) * 3);
@@ -33,7 +33,7 @@
                         gap: calc(var(--gap) / 3);
 
                         & img{
-                            height: calc(var(--txt-text) / 1.5);
+                            height: calc(var(--txt-body) / 1.5);
                             width: auto;
                         }
                     }

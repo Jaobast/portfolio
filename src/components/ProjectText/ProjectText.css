@@ -4,8 +4,8 @@
     & .titel{
         display: flex; flex-direction: column-reverse;
     }
-    & h3{font-size: var(--txt-theme); line-height: 0.8;}
-    & h4{font-size: var(--txt-text); color: var(--orange);}
+    & h3{font-size: var(--txt-h2); line-height: 0.8;}
+    & h4{font-size: var(--txt-body); color: var(--orange);}
     & p{
         max-width: var(--max-width);
     }

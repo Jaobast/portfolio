@@ -28,7 +28,7 @@
     padding: 0 var(--padding);
 
     & h2{
-            font-size: calc(var(--txt-theme) / 1.2);
+            font-size: calc(var(--txt-h2) / 1.2);
     }
 
     & div{

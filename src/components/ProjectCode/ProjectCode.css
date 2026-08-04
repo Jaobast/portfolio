@@ -9,7 +9,7 @@
 
     & p{
         font-family: monospace;
-        font-size: calc(var(--txt-text) / 1.4) ;
+        font-size: calc(var(--txt-body) / 1.4) ;
     }
 }
 

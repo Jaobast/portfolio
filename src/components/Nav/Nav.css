@@ -1,8 +1,9 @@
 nav{
     position: fixed;
     z-index: 3;
-    top: 0; left: 0;
-    width: 100vw;
+    transform: translateX(-50%);
+    top: 0; left: 50%;
+    width: 100vw; max-width: 1920px;
     padding: var(--padding) calc(var(--padding) + (var(--padding) / 2));
     padding-top: calc(var(--padding) + 4px);
 

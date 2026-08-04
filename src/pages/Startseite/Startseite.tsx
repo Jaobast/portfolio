@@ -13,7 +13,7 @@ function Startseite() {
         <Nav />
         <header className='screen'>
             <video autoPlay loop muted playsInline>
-                <source src="/portfolio/video/header.mp4" type="video/mp4"/>
+                <source src="/portfolio/video/header2.mp4" type="video/mp4"/>
             </video>
             <article>
                 <h1 className='deutsch'>
@@ -25,7 +25,7 @@ function Startseite() {
 
                 <ProjectText
                     textParagraph={<>
-                    In Brasilien geboren und seit 2017 in Deutschland. Ich schreibe Code, der wie Design aussieht, und mache Design, das sich wie Code anfühlt.
+                    In Brasilien geboren und seit 2017 in Deutschland. Ich schreibe Code, die wie Design aussehen, und mache Designs, die sich wie Code anfühlen.
                     <br /><br />
                     Ich bin ein eher ruhiger, aber kommunikativer Typ, der mit Leidenschaft programmiert, gerne Schach spielt und sich über Popkultur austauscht.
                     </>}
@@ -45,13 +45,12 @@ function Startseite() {
             <section className='about'>
                 <article>
                     <div className="tecnologie">
-                        <h2> Frontend <br /> Entwickler </h2>
+                        <h2> Design Engineer</h2>
 
                         <ul>
-                            <li>Python</li>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
+                            <li>Frontend Dev</li>
+                            <li>UX/UI</li>
+                            <li>Product Designer</li>
                         </ul>
                     </div>
 
@@ -59,21 +58,21 @@ function Startseite() {
 
                         <ProjectText
                             textParagraph={<>
-                            Mit der Zeit habe ich gemerkt, dass Programmieren nicht nur mein Job ist, es ist auch das, was mir richtig Spaß macht.
+                            Mit der Zeit habe ich gemerkt, dass Design nicht nur mein Job ist, es ist auch das, was mir richtig Spaß macht.
                             <br /><br />
-                            Programmiersprachen ist für mich eine Art Challenge. Jedes neue Framework, jede Sprache und jedes Konzept ist für mich eine Gelegenheit, etwas Neues zu entdecken und besser zu werden.
+                            User Interfaces sind für mich eine Art Challenge. Jedes neue Layout, jedes Interaktionsmuster und jedes visuelle Detail ist für mich eine Gelegenheit, etwas Neues zu entdecken und besser zu werden.
                             <br /><br />
-                            Ich bin einfach neugierig, wenn es um Programmierung geht und das hält mich immer am Lernen. Genau das liebe ich an diesem Beruf.
+                            Ich bin einfach neugierig, wenn es um die Gestaltung von Interfaces geht, und das hält mich immer am Lernen. Genau das liebe ich an diesem Beruf.
                             </>}
                         />
 
                         <ProjectTextEn
                             textParagraph={<>
-                            Over time, I realized that programming isn't just my job, it's also what I genuinely enjoy.
+                            Over time, I've realized that design isn't just my job, it's also what genuinely makes me happy.
                             <br /><br />
-                            Programming languages are a kind of challenge for me. Every new framework, every language, and every concept is an opportunity to discover something new and grow.
+                            User interfaces are a kind of challenge for me. Every new layout, every interaction pattern, and every visual detail is an opportunity to discover something new and get better.
                             <br /><br />
-                            I'm simply curious when it comes to programming, and that keeps me constantly learning. That's exactly what I love about this field.
+                            I'm simply curious when it comes to crafting interfaces, and that's what keeps me learning. That's exactly what I love about this profession.
                             </>}
                         />
 
@@ -97,53 +96,51 @@ function Startseite() {
                     </div>
                 </article>
 
-                <img className="pic-me" src="/portfolio/img/me-about.png" alt="" />
+                <div className="polaroids">
+                    <img className="pic_01" src="/portfolio/img/polaroid_01.png" alt="picture of me 01"/>
+                    <img className="pic_02" src="/portfolio/img/polaroid_02.png" alt="picture of me 02"/>
+                    <img className="pic_03" src="/portfolio/img/polaroid_03.png" alt="picture of me 03"/>
+
+                </div>
             </section>
 
             <section className='projects'>
 
                 <ProjectCard
+                    name='Mova'
+                    img='/portfolio/project/Mova/card.jpg'
+                    tag= 'UI-UX Design | E-Commerce | Design System'
+                />
+
+                <ProjectCard
                     name='MyMixx'
                     img='/portfolio/project/MyMixx/card.jpg'
-                    tag= 'UI-UX Design | Frontend Entwickler'
+                    tag= 'UI-UX Design | Frontend Entwickler | E-Commerce | Design System'
                 />
 
                 <ProjectCard
                     name='Caflex'
                     img='/portfolio/project/Caflex/card.jpg'
-                    tag= 'UI-UX Design | Frontend Entwickler'
+                    tag= 'UI-UX Design | Frontend Entwickler | Webapp | Design System'
                 />
 
                 <ProjectCard
                     name='Essencial'
                     img='/portfolio/project/Essencial/card.jpg'
-                    tag= 'UI-UX Design | Frontend Entwickler'
+                    tag= 'UI Design | Frontend Entwickler | Landing Page | Design System'
                 />
 
                 <ProjectCard
                     name='Targobank'
                     img='/portfolio/project/Targobank/card.jpg'
-                    tag= 'UI-UX Design'
+                    tag= 'UI Design | Design System'
                 />
 
                 <ProjectCard
                     name='Praxis Lounge'
                     nameLink='Praxis'
                     img='/portfolio/project/Praxis/card.jpg'
-                    tag= 'Design | Frontend Entwickler'
-                />
-
-                <ProjectCard
-                    name= 'Conquest'
-                    img='/portfolio/project/Conquest/card.jpg'
-                    tag= 'Game Design'
-                />
-
-                <ProjectCard
-                    name= 'Sprout Run'
-                    nameLink='Sprout'
-                    img='/portfolio/project/Sprout/card.jpg'
-                    tag= 'Game Design'
+                    tag= 'UI Design | Frontend Entwickler | Webapp | Design System'
                 />
 
             </section>

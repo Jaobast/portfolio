@@ -23,7 +23,7 @@
         
         width: fit-content;
         font-family: 'Afacad';
-        font-size: var(--txt-text);
+        font-size: var(--txt-body);
         padding: 5px 10px; border-radius: 100px;
         background-color: grey; color: white;
         cursor: pointer;

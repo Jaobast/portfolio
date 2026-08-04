@@ -17,7 +17,7 @@ function Praxis() {
           <ProjectHeader
               name='Praxis Lounge'
               logo='/portfolio/project/Praxis/logo.svg'
-              img='/portfolio/project/Praxis/cover.jpg'
+              video='/portfolio/project/Praxis/cover.mp4'
               description={<>
               Praxis Lounge ist eine mobile-first Chat-App für den Krankenhausalltag. Sie ermöglicht eine schnelle und klare Kommunikation zwischen Pflegekräften, selbst wenn sie auf verschiedene Stationen verteilt sind.
               <br /><br />
