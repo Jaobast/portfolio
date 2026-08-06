@@ -82,6 +82,18 @@ function Caflex() {
           <img className='img-project padding no-mobile' src="/portfolio/project/Caflex/bilder/06.png" alt="bild" />
           <img className='img-project padding only-mobile' src="/portfolio/project/Caflex/bilder/07.png" alt="bild" />
 
+          {/* <section className='cards'>
+            <div className="text-block">
+              <h3>Finde das Café, das mit dir matcht</h3>
+              <p>Ob unterwegs, mit Freunden oder ganz allein. Wir zeigen dir Cafés, die wirklich zu deinem Geschmack passen.</p>
+            </div>
+            <div className='container'>
+              <img src="/portfolio/project/Caflex/bilder/09.png" alt="bild" />
+              <img src="/portfolio/project/Caflex/bilder/10.png" alt="bild" />
+              <img src="/portfolio/project/Caflex/bilder/11.png" alt="bild" />
+            </div>
+          </section> */}
+
           <ProjectText
             textTitel='Components'
             textSubtitel='Funktionalität'
@@ -118,6 +130,10 @@ function Caflex() {
             </>}
           />
 
+          <video autoPlay loop muted playsInline className='video-02'>
+                <source src="/portfolio/project/Caflex/videos/02.mp4" type="video/mp4"/>
+          </video>
+
           <ProjectCode
             lines={[
               {
@@ -153,6 +169,10 @@ function Caflex() {
             This structure makes the project easily scalable: the data currently lives in a typed JSON object, but could seamlessly be replaced by an API call without modifying the component structure.
             </>}
           />
+
+          <video autoPlay loop muted playsInline className='video-01'>
+                <source src="/portfolio/project/Caflex/videos/01.mp4" type="video/mp4"/>
+          </video>
 
           <ProjectCode
             lines={[

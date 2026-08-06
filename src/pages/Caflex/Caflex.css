@@ -1,4 +1,29 @@
+.Caflex{
+    & .cards{
+        padding: 0 var(--padding);
+        display: flex; flex-direction: column;
+        gap: 40px;
 
+        & h3{font-size: var(--txt-h2); line-height: 0.8;}
+
+        & .container{
+            display: flex; gap: 40px;
+
+            & img{
+                flex: 1;
+                min-width: 0;
+                height: auto;
+                border-radius: var(--border);
+            }
+        }
+    }
+
+    & video.video-01, video.video-02 {
+        width: 30%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
 /* Desktop */
 @media (min-width: 1440px){
     .Caflex{
@@ -29,5 +54,6 @@
             width: 140%;
             margin-left: -20%;
         }
+        & video.video-01, video.video-02 { width: 100%;}
     }
 }

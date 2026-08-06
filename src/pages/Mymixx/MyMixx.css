@@ -8,6 +8,9 @@
         margin-top: 30px;
         width: 80vw;
     }
+    & .img-04{
+            width: 50vw;
+        }
 
     & .img-03{
         margin-top: calc(-1 * var(--gap-main));

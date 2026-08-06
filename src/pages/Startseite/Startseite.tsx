@@ -13,7 +13,7 @@ function Startseite() {
         <Nav />
         <header className='screen'>
             <video autoPlay loop muted playsInline>
-                <source src="/portfolio/video/header2.mp4" type="video/mp4"/>
+                <source src="/portfolio/video/header.mp4" type="video/mp4"/>
             </video>
             <article>
                 <h1 className='deutsch'>
