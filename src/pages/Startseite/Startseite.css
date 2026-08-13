@@ -17,7 +17,7 @@
     & article{
         display: flex; justify-content: space-between;
         gap: var(--gap);
-        padding: 0 calc(1.5 * var(--padding));
+        padding: 0 calc(var(--padding) + 8px);
 
         & h1{
             width: fit-content;
@@ -152,8 +152,9 @@
 
 .Startseite .projects{
     padding-top: 80px;
-    display: flex; flex-direction: column;
-    gap: calc(var(--gap) * 2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
 }
 
 
@@ -230,6 +231,7 @@
         & .text {
             & p{ max-width: 500px;}
     }
+}
 
     .Startseite .about article .text .socialmedia img{height: 24px;}
 
@@ -246,7 +248,7 @@
 
     .Startseite .projects{
         padding-top: 50px;
-        gap: calc(var(--gap) * 1.3);
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--gap);
     }
-}
 }

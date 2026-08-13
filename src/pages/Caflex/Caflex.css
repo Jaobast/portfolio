@@ -18,7 +18,7 @@
         }
     }
 
-    & video.video-01, video.video-02 {
+    & video.video-01, video.video-02{
         width: 30%;
         object-fit: contain;
         margin: 0 auto;

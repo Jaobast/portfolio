@@ -22,7 +22,7 @@
     & .logo{height: var(--ProjectHeader-logo);}
 
     & section.screen{
-        padding: 7svh 0 var(--padding);
+        padding: 0 0 32px;
         display: flex; flex-direction: column;
         gap: var(--gap);
         align-items: center; justify-content: space-between;
@@ -123,8 +123,9 @@
     .ProjectHeader{
         & .projectname-container{ margin-top: 6svh;}
 
-        & .screen{
+        & section.screen{
             height: fit-content;
+            padding: 7svh 0 var(--padding);
         }
 
         & video {
@@ -134,4 +135,5 @@
             aspect-ratio: 1/1;
         }
     }
+        
 }

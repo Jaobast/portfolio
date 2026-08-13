@@ -16,7 +16,7 @@ function Footer() {
                 <div className="info-column">
                     <div className="info">
                         <p className='bold'>
-                            {lang === "de" ? "Aktuaisiert in" : "Updated on:"}
+                            {lang === "de" ? "Aktualisiert in" : "Updated on:"}
                         </p>
                         <p>2026</p>
                     </div>
@@ -32,7 +32,7 @@ function Footer() {
                 <div className="info-column">
                     <div className="info">
                         <p className='bold'>
-                            {lang === "de" ? "Für weitere Frage:" : "Any questions?"}
+                            {lang === "de" ? "Für weitere Fragen:" : "Any questions?"}
                         </p>
                         <p>joaobastos@outlook.de</p>
                     </div>

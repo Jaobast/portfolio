@@ -82,17 +82,6 @@ function Caflex() {
           <img className='img-project padding no-mobile' src="/portfolio/project/Caflex/bilder/06.png" alt="bild" />
           <img className='img-project padding only-mobile' src="/portfolio/project/Caflex/bilder/07.png" alt="bild" />
 
-          {/* <section className='cards'>
-            <div className="text-block">
-              <h3>Finde das Café, das mit dir matcht</h3>
-              <p>Ob unterwegs, mit Freunden oder ganz allein. Wir zeigen dir Cafés, die wirklich zu deinem Geschmack passen.</p>
-            </div>
-            <div className='container'>
-              <img src="/portfolio/project/Caflex/bilder/09.png" alt="bild" />
-              <img src="/portfolio/project/Caflex/bilder/10.png" alt="bild" />
-              <img src="/portfolio/project/Caflex/bilder/11.png" alt="bild" />
-            </div>
-          </section> */}
 
           <ProjectText
             textTitel='Components'
@@ -104,8 +93,11 @@ function Caflex() {
             textSubtitel='Funktionality'
           />
 
+
           <div className="img-mobile">
-            <img src="/portfolio/project/Caflex/bilder/03.png" alt="bild" />
+            <video autoPlay loop muted playsInline >
+                <source src="/portfolio/project/Caflex/videos/03.mp4" type="video/mp4"/>
+            </video>
           </div>
 
           <ProjectText
@@ -223,17 +215,17 @@ function Caflex() {
           </div>
 
           <ProjectText
-            textTheme='Einkaufswagen „My Mixx"'
+            textTheme='Einkaufswagen '
             textParagraph={<>
             Der My-Mixx-Bildschirm zeigt in Echtzeit alle vom Nutzer hinzugefügten Produkte, geordnet nach Kategorie: Basis, Früchte, Süßungsmittel und Nüsse... und der Gesamtpreis<br />
-            Jedes Produkt wird mit Name und Einzelpreis angezeigt und kann direkt über den X-Button entfernt werden.
+            Jedes Produkt  wird mit Name und Einzelpreis angezeigt und kann direkt über den X-Button entfernt werden.
             <br /><br />
-            Ein Klick auf den X-Button setzt den booleschen useState isAdded des entsprechenden Produkts auf false zurück. Dadurch verschwindet das Produkt aus der My-Mixx-Liste und der Button im Produktcard wechselt wieder von „Entfernen" zurück zu „Hinzufügen". Der Gesamtpreis wird dabei automatisch neu berechnet und sofort aktualisiert.
+            Ein Klick auf den X-Button setzt den booleschen useState isAdded des entsprechenden Produkts auf false zurück. Dadurch verschwindet das Produkt aus der My-Mixx-Liste und der Button im Produktcard wechselt wieder von „Entfernen" zurück zu „Hinzufügen".  Der Gesamtpreis wird dabei automatisch neu berechnet und sofort aktualisiert.
             </>}
           />
 
           <ProjectTextEn
-            textTheme='Shopping Cart "My Mixx"'
+            textTheme='Shopping Cart'
             textParagraph={<>
             The My Mixx screen displays in real time all products added by the user, organized by category: base, fruits, sweeteners, and nuts. Along with the total price. <br />
             Each product is shown with its name and individual price, and can be removed directly via the X button.

@@ -3,9 +3,9 @@ nav{
     z-index: 3;
     transform: translateX(-50%);
     top: 0; left: 50%;
-    width: 100vw; max-width: 1920px;
-    padding: var(--padding) calc(var(--padding) + (var(--padding) / 2));
-    padding-top: calc(var(--padding) + 4px);
+    width: 100vw; max-width: 1700px;
+    padding: var(--padding) calc(var(--padding) + 8px);
+    padding-top: 32px;
 
     display: flex;
     justify-content: space-between;
@@ -40,7 +40,9 @@ nav{
 
 /* Mobile */
 @media (max-width: 767px) {
-    nav{ justify-content: start;
+    nav{
+        padding-top: calc(var(--padding) + 4px);
+        justify-content: start;
     }
 
 }

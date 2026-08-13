@@ -1,20 +1,18 @@
 
 
 .Footer{
-    padding: 200px 0 0;
-    width: 100vw; max-width: 1920px;
+    padding: 120px var(--padding) 8px;
+    width: 100%; max-width: 1700px;
 
     display: flex; flex-direction: column;
 
     & img.logo{
         width: 100%;
         opacity: 0.1;
-        padding: 0 4px;
     }
 
     & .text-block{
         display: flex; justify-content: space-between;
-        padding: 0 calc(var(--padding) + (var(--padding) / 2));
 
         & .titel{ font-size: var(--txt-h1); color: black;}
 

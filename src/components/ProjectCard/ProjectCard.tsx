@@ -1,7 +1,6 @@
 import * as motion from "motion/react-client"
 import { useNavigate } from "react-router-dom";
 import './ProjectCard.css'
-import { useLang } from '../../hooks/LangContext'
 
 type cardProps= {
     img: string,
@@ -11,7 +10,6 @@ type cardProps= {
 }
 
 function ProjectCard({img, name, nameLink, tag}: cardProps) {
-    const { lang } = useLang()
 
     const navigate = useNavigate();
 
@@ -41,15 +39,22 @@ function ProjectCard({img, name, nameLink, tag}: cardProps) {
                     scale: { type: "spring", visualDuration: 0.5, bounce: 0.4 },
                 }
                 }}
+                whileHover={{
+                    scale: 1.1,
+                    transition: {
+                        duration: 1.2,
+                        ease: "easeInOut",
+                    }
+                }}
                 viewport={{
                 amount: "some",
                 }}
             />
             <button className="bttn">
-                {lang === "de" ? "Projekt anschauen" : "View Project"}
+                <img src="/portfolio/svg/arrow-open.svg" alt="arrow icon" />
             </button>
         </div>
-        <div className="name-container text-block">
+        <div className="name-container">
             <p className="name">{name}</p>
             <p className="tag">{tag}</p>
 

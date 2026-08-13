@@ -7,6 +7,7 @@
   --green: #37C25C;
   --orange: #F14600;
   --grey: #8a8a8a;
+  --baby: #d6d9ec;
 
   --code-red: #EF2A2D;
   --code-rosa: #FF30B3;
@@ -17,7 +18,7 @@
   --gap-main:120px;
   --width-img-mobile: 25vw;
 
-  --padding: 20px;
+  --padding: 60px;
   --border:40px;
 
   --txt-h1: 60px;
@@ -70,7 +71,7 @@
 body{
     background-color: white;
     color: black;
-    width: 100vw; max-width: 1920px;
+    width: 100vw; max-width: 1700px;
     margin: 0 auto;
 
     font-family: 'Afacad';
@@ -99,7 +100,7 @@ h1{font-weight: 700;}
 }
 
 .text-block, article{
-    padding: 0 calc(var(--padding) / 2);
+    padding: 0 8px;
 }
 
 .img-project{
@@ -116,7 +117,7 @@ h1{font-weight: 700;}
   display: flex;
   justify-content:space-evenly;
 
-  & img {
+  & img, video {
     height: auto;
     width: var(--width-img-mobile);
     flex-shrink: 0;

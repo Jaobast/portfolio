@@ -25,7 +25,7 @@ function Startseite() {
 
                 <ProjectText
                     textParagraph={<>
-                    In Brasilien geboren und seit 2017 in Deutschland. Ich schreibe Code, die wie Design aussehen, und mache Designs, die sich wie Code anfühlen.
+                    In Brasilien geboren und seit 2017 in Deutschland. Ich schreibe Code, der wie Design aussieht, und mache Designs, die sich wie Code anfühlen.
                     <br /><br />
                     Ich bin ein eher ruhiger, aber kommunikativer Typ, der mit Leidenschaft programmiert, gerne Schach spielt und sich über Popkultur austauscht.
                     </>}
@@ -109,7 +109,7 @@ function Startseite() {
                 <ProjectCard
                     name='Mova'
                     img='/portfolio/project/Mova/card.jpg'
-                    tag= 'UI-UX Design | E-Commerce | Design System'
+                    tag= 'ein Online-Shop-Konzept für handgefertigte Keramikvasen'
                 />
 
                 <ProjectCard
