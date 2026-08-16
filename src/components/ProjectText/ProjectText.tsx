@@ -22,7 +22,7 @@ function ProjectText({textTitel, textSubtitel, textTheme, textParagraph}: Projec
             ): ""}
             {textParagraph?(
                 <div className="text">
-                    <p className='text-bold' >{textTheme}</p>
+                    <h3>{textTheme}</h3>
                     <p>{textParagraph}</p>
                 </div>
             ) : ""}

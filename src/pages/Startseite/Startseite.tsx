@@ -104,44 +104,60 @@ function Startseite() {
                 </div>
             </section>
 
+
             <section className='projects'>
+                <h2 className='text-block'>Projekte</h2>
+                <div className="grid">
+                    <ProjectCard
+                        name='Mova'
+                        img='/portfolio/project/Mova/card.jpg'
+                        tag= 'Ein Online-Shop-Konzept für handgefertigte Keramikvasen. Ruhig und zeitlos im Design.'
+                    />
 
-                <ProjectCard
-                    name='Mova'
-                    img='/portfolio/project/Mova/card.jpg'
-                    tag= 'ein Online-Shop-Konzept für handgefertigte Keramikvasen'
-                />
+                    <ProjectCard
+                        name='MyMixx'
+                        img='/portfolio/project/MyMixx/card.jpg'
+                        tag= 'Mixx deine Wünsche zusammen. Ein Müsli-Store für dein ganz eigenes, persönliches Müsli.'
+                    />
 
-                <ProjectCard
-                    name='MyMixx'
-                    img='/portfolio/project/MyMixx/card.jpg'
-                    tag= 'UI-UX Design | Frontend Entwickler | E-Commerce | Design System'
-                />
+                    <ProjectCard
+                        name='Caflex'
+                        img='/portfolio/project/Caflex/card.jpg'
+                        tag= 'Wo gibts den besten Kaffee in der Stadt? Caflex hilft dir, die besten Cafés deinem Ort zu entdecken.'
+                    />
 
-                <ProjectCard
-                    name='Caflex'
-                    img='/portfolio/project/Caflex/card.jpg'
-                    tag= 'UI-UX Design | Frontend Entwickler | Webapp | Design System'
-                />
+                    <ProjectCard
+                        name='Essencial'
+                        img='/portfolio/project/Essencial/card.jpg'
+                        tag= 'Essencial ist ein Massage-Salon, der Ruhe und Wohlbefinden in den Mittelpunkt stellt.'
+                    />
 
-                <ProjectCard
-                    name='Essencial'
-                    img='/portfolio/project/Essencial/card.jpg'
-                    tag= 'UI Design | Frontend Entwickler | Landing Page | Design System'
-                />
+                    <ProjectCard
+                        name='Targobank'
+                        img='/portfolio/project/Targobank/card.jpg'
+                        tag= 'Targobank ist eine der größten Banken Deutschlands. Position: UI/UX Designer.'
+                    />
 
-                <ProjectCard
-                    name='Targobank'
-                    img='/portfolio/project/Targobank/card.jpg'
-                    tag= 'UI Design | Design System'
-                />
+                    <ProjectCard
+                        name='Praxis Lounge'
+                        nameLink='Praxis'
+                        img='/portfolio/project/Praxis/card.jpg'
+                        tag= 'Eine mobile-first Chat-App für schnelle, klare Kommunikation im Krankenhausalltag.'
+                    />
 
-                <ProjectCard
-                    name='Praxis Lounge'
-                    nameLink='Praxis'
-                    img='/portfolio/project/Praxis/card.jpg'
-                    tag= 'UI Design | Frontend Entwickler | Webapp | Design System'
-                />
+                    <ProjectCard
+                        name='Dabei'
+                        img='/portfolio/project/Dabei/card.jpg'
+                        tag= 'Eine mobile-first Chat-App für schnelle, klare Kommunikation im Krankenhausalltag.'
+                    />
+
+                    <ProjectCard
+                        name='Gleichklang'
+                        img='/portfolio/project/Gleichklang/card.jpg'
+                        tag= 'Eine mobile-first Chat-App für schnelle, klare Kommunikation im Krankenhausalltag.'
+                    />
+                </div>
+
 
             </section>
         </main>

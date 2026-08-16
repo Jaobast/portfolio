@@ -1,7 +1,16 @@
-
+.Praxis{
+    & .img-03{
+        width: 60vw;
+    }
+}
 
 /* Desktop */
 @media (min-width: 1440px){
+    .Praxis{
+        & .img-04{
+            width: 60vw;
+        }
+    }
 }
 
 /* Tablet */

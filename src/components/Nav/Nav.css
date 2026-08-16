@@ -3,7 +3,7 @@ nav{
     z-index: 3;
     transform: translateX(-50%);
     top: 0; left: 50%;
-    width: 100vw; max-width: 1700px;
+    width: 100vw; max-width: 1600px;
     padding: var(--padding) calc(var(--padding) + 8px);
     padding-top: 32px;
 
@@ -15,17 +15,21 @@ nav{
 
     & img{ object-fit: initial;}
 
-    & img.mail{ width: 23px; margin-bottom: 3px;}
+    & img.mail{
+        width: 23px; margin-bottom: 3px;
+    }
 
     & img.logo{
         width: 100px;
         filter: invert(1) grayscale(1) brightness(1);
+        cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;
     }
 
     & a{
         display: flex;
         gap: 15px;
         align-items: end;
+        cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;
     }
 
     & .lang-mail{

@@ -67,6 +67,7 @@
         width: 45%;
         max-width: 320px;
         transition: transform 0.3s ease;
+        cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;
     }
 
     & .pic_01 {
@@ -102,7 +103,7 @@
             display: flex; flex-direction: column;
             gap: 4px;
 
-            & h2{ line-height: 0.8; color: var(--orange); font-weight: 500; font-size: calc(var(--txt-body) * 1.7);}
+            & h2{ line-height: 0.8; color: var(--orange);}
 
             & ul{ display: flex; justify-content: space-between; max-width: 500px;}
             & ul li{ font-size: var(--txt-body)}
@@ -118,6 +119,8 @@
                 display: flex;
                 gap: var(--gap);
 
+                & a{ cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;}
+
                 & img{ height: 30px;}
             }
         }
@@ -130,6 +133,7 @@
                 padding: 4px 16px; border-radius: 100px;
                 border: 1px solid var(--grey);
                 display: block;
+                cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;
             }
             & button {
                 background-color: var(--grey); color: white;
@@ -151,10 +155,14 @@
 }
 
 .Startseite .projects{
-    padding-top: 80px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap);
+    gap: 8px;
+
+    & h2{ color: var(--orange);}
+    & .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+    }
 }
 
 
@@ -189,6 +197,10 @@
     }
 
     .Startseite .about article .text .socialmedia img{height: 28px;}
+
+    .Startseite .projects .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Mobile */
@@ -246,9 +258,8 @@
         border-color: var(--orange);
     }
 
-    .Startseite .projects{
-        padding-top: 50px;
+    .Startseite .projects .grid{
         grid-template-columns: repeat(1, 1fr);
-        gap: var(--gap);
+        gap: calc(var(--gap) * 2);
     }
 }

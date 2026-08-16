@@ -91,9 +91,7 @@ function Mova() {
             </>}
           />
 
-          <video autoPlay loop muted playsInline className='img-project padding video01'>
-                <source src="/portfolio/project/Mova/bilder/09.mp4" type="video/mp4" />
-          </video>
+          <img src="/portfolio/project/Mova/bilder/09.gif" alt="" className='img-project padding video01' />
 
           <ProjectText
             textTheme='PDP (Product Detail Page)'
@@ -133,9 +131,7 @@ function Mova() {
             </>}
           />
 
-          <video autoPlay loop muted playsInline className='img-project padding video01'>
-                <source src="/portfolio/project/Mova/bilder/11.mp4" type="video/mp4" />
-          </video>
+          <img src="/portfolio/project/Mova/bilder/11.gif" alt="" className='img-project padding video01' />
 
           <img className='logo-pattern' src="/portfolio/project/Mova/logo.svg" alt="logo" />
 

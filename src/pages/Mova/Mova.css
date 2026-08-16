@@ -1,6 +1,18 @@
+html:has(.Mova), body:has(.Mova) {
+  background-color: #651A14;
+}
+
+.Mova .Footer {
+  color: white;
+  & .text-block .infos-container .info-column .bold { color: white;}
+  & .text-block .titel { color: white;}
+}
+
 .Mova{
     & .logo-pattern{width: 15vw; margin: 0 auto;}
 
+    & h1, h2, h3, main p, .text-bold{color: white;}
+    & main p{opacity: 0.6;}
 }
 
 /* Desktop */

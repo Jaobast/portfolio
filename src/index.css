@@ -6,7 +6,7 @@
   --blue: #008DFF;
   --green: #37C25C;
   --orange: #F14600;
-  --grey: #8a8a8a;
+  --grey: #818181;
   --baby: #d6d9ec;
 
   --code-red: #EF2A2D;
@@ -22,7 +22,8 @@
   --border:40px;
 
   --txt-h1: 60px;
-  --txt-h2: 40px;
+  --txt-h2: 36px;
+  --txt-h3: 28px;
   --txt-body: 22px;
 
   --max-width: 800px;
@@ -43,7 +44,8 @@
     --width-img-mobile: 25vw;
 
     --txt-h1: 48px;
-    --txt-h2: 32px;
+    --txt-h2: 34px;
+    --txt-h3: 28px;
     --txt-body: 20px;
   }
   .no-tablet, .only-mobile{display: none!important;}
@@ -60,6 +62,7 @@
 
     --txt-h1: 36px;
     --txt-h2: 28px;
+    --txt-h3: 24px;
     --txt-body: 18px;
     --max-width: 'none';
   }
@@ -68,23 +71,27 @@
 
 }
 
+html{
+  cursor: url('/portfolio/img/cursor-default.png') 20 10, auto;
+}
+
 body{
     background-color: white;
     color: black;
-    width: 100vw; max-width: 1700px;
+    width: 100vw; max-width: 1600px;
     margin: 0 auto;
 
     font-family: 'Afacad';
 }
 
 a{text-decoration: none; color: inherit; display: flex; cursor: pointer;}
-p{ font-size: var(--txt-body); color: var(--grey); }
-h1, h2{ font-size: var(--txt-h1);}
+p{ font-size: var(--txt-body); color: var(--grey); font-weight: 300;}
+h1{ font-size: var(--txt-h1); font-weight: 500;}
+h2{ font-size: var(--txt-h2); font-weight: 500;}
+h3{ font-size: var(--txt-h3); font-weight: 500;}
 ul{list-style: none;}
 img, video{ object-fit: cover;}
-button{cursor: pointer;}
-
-h2, h3, h4{font-weight: 300;}
+button{cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;}
 h1{font-weight: 700;}
 
 .project{

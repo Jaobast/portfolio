@@ -1,3 +1,18 @@
+html:has(.Caflex), body:has(.Caflex) {
+  background-color: #002B8A;
+}
+
+.Caflex .Footer {
+  color: white;
+  & .text-block .infos-container .info-column .bold { color: white;}
+  & .text-block .titel { color: white;}
+}
+
+.Caflex{
+    & h1, h2, h3, main p, .text-bold{color: white;}
+    & main p{opacity: 0.6;}
+}
+
 .Caflex{
     & .cards{
         padding: 0 var(--padding);
@@ -18,12 +33,16 @@
         }
     }
 
-    & video.video-01, video.video-02{
+    & .video-01, .video-02{
         width: 30%;
         object-fit: contain;
         margin: 0 auto;
     }
+
+    & .img-03{width: 60%;}
 }
+
+
 /* Desktop */
 @media (min-width: 1440px){
     .Caflex{
@@ -54,6 +73,6 @@
             width: 140%;
             margin-left: -20%;
         }
-        & video.video-01, video.video-02 { width: 100%;}
+        & .video-01, .video-02 { width: 100%;}
     }
 }

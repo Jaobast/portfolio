@@ -8,6 +8,8 @@ import Targobank from "./pages/Targobank/Targobank";
 import Caflex from "./pages/Caflex/Caflex";
 import Praxis from "./pages/Praxis/Praxis";
 import Mova from "./pages/Mova/Mova";
+import Dabei from "./pages/Dabei/Dabei";
+import Gleichklang from "./pages/Gleichklang/Gleichklang";
 
 import Cv from "./pages/Cv/Cv";
 
@@ -24,6 +26,8 @@ function App() {
         <Route path="/Praxis" element={<Praxis />} />
         <Route path="/Caflex" element={<Caflex />} />
         <Route path="/Mova" element={<Mova />} />
+        <Route path="/Dabei" element={<Dabei />} />
+        <Route path="/Gleichklang" element={<Gleichklang />} />
         <Route path="/Cv" element={<Cv />} />
       </Routes>
     </HashRouter>

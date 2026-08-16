@@ -44,8 +44,8 @@ function MyMixx() {
 
           <MotionImage
             img='/portfolio/project/MyMixx/bilder/07.png'
-            height
             noMobile
+            extraClass='img-05'
           />
 
           <MotionImage
@@ -77,8 +77,6 @@ function MyMixx() {
 
           <img className='img-project padding no-mobile' src="/portfolio/project/MyMixx/bilder/05.png" alt="bild" />
           <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.png" alt="bild" />
-
-          <img className='img-project padding img-03' src="/portfolio/project/MyMixx/bilder/04.png" alt="bild" />
 
           <img className='img-project img-04 no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
           <img className='img-project img-02 only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
@@ -404,6 +402,7 @@ function MyMixx() {
 
           <MotionImage
             img='/portfolio/project/MyMixx/bilder/06.png'
+            extraClass='img-06'
           />
 
           

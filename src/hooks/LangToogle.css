@@ -3,7 +3,7 @@
     z-index: 3;
     transform: translateX(-50%);
     top: 32px; left: 50%;
-    width: 100vw; max-width: 1700px;
+    width: 100vw; max-width: 1600px;
 
     display: flex;
     justify-content: end;
@@ -36,7 +36,7 @@
   color: #1a1a1a;
   font-size: calc(var(--txt-body) - 8px);
   font-weight: 500;
-  cursor: pointer;
+  cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;
   transition: background 0.2s ease, color 0.2s ease;
 }
 

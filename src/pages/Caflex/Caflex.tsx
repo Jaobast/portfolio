@@ -49,8 +49,8 @@ function Caflex() {
 
           <MotionImage
             img='/portfolio/project/Caflex/bilder/01.png'
-            height
             noMobile
+            extraClass='img-03'
           />
 
           <MotionImage
@@ -95,9 +95,7 @@ function Caflex() {
 
 
           <div className="img-mobile">
-            <video autoPlay loop muted playsInline >
-                <source src="/portfolio/project/Caflex/videos/03.mp4" type="video/mp4"/>
-            </video>
+            <img src="/portfolio/project/Caflex/videos/03.gif" alt=""/>
           </div>
 
           <ProjectText
@@ -122,9 +120,7 @@ function Caflex() {
             </>}
           />
 
-          <video autoPlay loop muted playsInline className='video-02'>
-                <source src="/portfolio/project/Caflex/videos/02.mp4" type="video/mp4"/>
-          </video>
+          <img src="/portfolio/project/Caflex/videos/02.gif" className='video-02' alt=""/>
 
           <ProjectCode
             lines={[
@@ -162,9 +158,7 @@ function Caflex() {
             </>}
           />
 
-          <video autoPlay loop muted playsInline className='video-01'>
-                <source src="/portfolio/project/Caflex/videos/01.mp4" type="video/mp4"/>
-          </video>
+          <img src="/portfolio/project/Caflex/videos/01.gif" className='video-01' alt=""/>
 
           <ProjectCode
             lines={[

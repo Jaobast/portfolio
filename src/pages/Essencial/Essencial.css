@@ -1,3 +1,18 @@
+html:has(.Essencial), body:has(.Essencial) {
+  background-color: #433023;
+}
+
+.Essencial .Footer {
+  color: white;
+  & .text-block .infos-container .info-column .bold { color: white;}
+  & .text-block .titel { color: white;}
+}
+
+.Essencial{
+    & h1, h2, h3, main p, .text-bold{color: white;}
+    & main p{opacity: 0.6;}
+}
+
 .Essencial{
 
     & .img-01{
@@ -11,11 +26,13 @@
     & .img-03{
         margin-top: calc(-1 * var(--gap-main));
     }
+    & .img-04{ width: 60%;}
 }
 
 
 /* Desktop */
 @media (min-width: 1440px){
+    & .img-05{ width: 60%;}
 }
 
 /* Tablet */

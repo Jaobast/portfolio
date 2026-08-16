@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import './NextProject.css'
 import { useLang } from '../../hooks/LangContext'
 
-const projects = ['Mova', 'MyMixx', 'Caflex', 'Essencial', 'Praxis', 'Targobank']
+const projects = ['Mova', 'MyMixx', 'Caflex', 'Essencial', 'Praxis', 'Targobank', 'Dabei', 'Gleichklang']
 
 type NextProjectProps = {
     thisProject: string,
@@ -37,7 +37,9 @@ function NextProject({thisProject}: NextProjectProps) {
                         key={project}
                         className={
                             index === filteredProjects.length - 1 ? 'no-mobile no-tablet no-desktop'
-                            : index === filteredProjects.length - 2 ? 'no-mobile'
+                            : index === filteredProjects.length - 2 ? 'no-mobile no-tablet no-desktop'
+                            : index === filteredProjects.length - 3 ? 'no-mobile no-tablet no-desktop'
+                            : index === filteredProjects.length - 4 ? 'no-mobile'
                             : ''
                         }
                         onClick={() => openProject(project)}

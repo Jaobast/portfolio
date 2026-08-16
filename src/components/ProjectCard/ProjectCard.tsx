@@ -55,7 +55,7 @@ function ProjectCard({img, name, nameLink, tag}: cardProps) {
             </button>
         </div>
         <div className="name-container">
-            <p className="name">{name}</p>
+            <h3 className="name">{name}</h3>
             <p className="tag">{tag}</p>
 
         </div>

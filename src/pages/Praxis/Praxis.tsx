@@ -41,8 +41,8 @@ function Praxis() {
 
           <MotionImage
             img='/portfolio/project/Praxis/bilder/06.png'
-            height
             noMobile
+            extraClass='img-03'
           />
 
           <MotionImage
@@ -479,7 +479,7 @@ function Praxis() {
             ]}
           />
 
-          <img className='img-project padding' src="/portfolio/project/Praxis/bilder/11.png" alt="bild" />
+          <img className='img-project padding img-04' src="/portfolio/project/Praxis/bilder/11.png" alt="bild" />
 
           <NextProject thisProject='Praxis'/>
 

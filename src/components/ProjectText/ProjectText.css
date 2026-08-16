@@ -3,21 +3,16 @@
 
     & .titel{
         display: flex; flex-direction: column-reverse;
+
+        & h4{line-height: 0.8; font-size: var(--txt-body); color: var(--orange); font-weight: 500;}
     }
-    & h3{font-size: var(--txt-h2); line-height: 0.8;}
-    & h4{font-size: var(--txt-body); color: var(--orange);}
     & p{
         max-width: var(--max-width);
     }
 
-    & .text-block{
+    & .text h3{
         display: flex; flex-direction: column;
-        gap: var(--gap);
-    }
-
-    & .text-bold{
-        font-weight: 500;
-        color: black;
+        font-size: var(--txt-body);
     }
 }
 

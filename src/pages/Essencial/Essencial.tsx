@@ -290,6 +290,7 @@ function Essencial() {
           <MotionImage
             img='/portfolio/project/Essencial/bilder/09.png'
             padding
+            extraClass='img-05'
           />
 
           <NextProject thisProject='Essencial'/>
